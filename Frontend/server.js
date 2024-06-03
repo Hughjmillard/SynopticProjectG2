@@ -12,8 +12,8 @@ app.use('/', indexRouter);
 const secondRouter = require('./routes/symptoms');
 app.use('/symptoms', secondRouter);
 
-const thirdRouter = require('./routes/doctors');
-app.use('/doctors', thirdRouter);
+const thirdRouter = require('./routes/contact');
+app.use('/contact', thirdRouter);
 
 const fourthRouter = require('./routes/learning');
 app.use('/learning', fourthRouter);
