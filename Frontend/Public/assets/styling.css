@@ -1,3 +1,63 @@
+
+
 *{
     background-color: bisque;
+}
+
+/* Nav styling */
+.mainNav a{
+    display: block;
+    background-color: lightgrey;
+    text-decoration: none;
+    text-align: center;
+    font-size: 20px;
+    font-family: bebas neue;
+    padding: 20px;
+    border: 0px;
+    color: grey;
+    border-radius: 10px;
+}
+
+a{
+    background-color: transparent;
+}
+/*the hover effect*/
+.nav { 
+    transition: all .2s ease-in-out;
+    margin: 0 6px; 
+}
+
+    
+.nav:hover { 
+     transform: scale(1.1); 
+}
+
+.navActive{
+   border: 5px solid lightblue;
+   border-radius: 20px;
+}
+
+
+.heading{
+    text-align: center;
+    justify-content: center;
+}
+
+#homeBoxes{
+    position: relative;
+    display:flex;
+    justify-content: center;
+}
+.homeBoxes{
+    border: 1px solid darkgrey;
+    border-radius: 10px;
+    background-color: lightgrey;
+    text-align: center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 47%;
+    margin: 0px 5px;
 }
