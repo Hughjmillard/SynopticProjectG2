@@ -2,7 +2,7 @@ const express = require('express');
 const router = express.Router();
 
 router.get('/', (request, response) => {
-    response.render('fourth',{title: 'Health Website'
+    response.render('symptoms',{title: 'Health Website'
     });
 });
 

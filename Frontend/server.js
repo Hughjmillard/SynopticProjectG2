@@ -9,14 +9,14 @@ app.use(express.static('Public'));
 const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
-const secondRouter = require('./routes/second');
-app.use('/second', indexRouter);
+const secondRouter = require('./routes/symptoms');
+app.use('/symptoms', indexRouter);
 
-const thirdRouter = require('./routes/third');
-app.use('/third', indexRouter);
+const thirdRouter = require('./routes/doctors');
+app.use('/doctors', indexRouter);
 
-const fourthRouter = require('./routes/fourth');
-app.use('/fourth', indexRouter);
+const fourthRouter = require('./routes/learning');
+app.use('/learning', indexRouter);
 
 app.listen(port,(error)=>{
     if(error){
