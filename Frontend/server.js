@@ -10,13 +10,13 @@ const indexRouter = require('./routes/index');
 app.use('/', indexRouter);
 
 const secondRouter = require('./routes/symptoms');
-app.use('/symptoms', indexRouter);
+app.use('/symptoms', secondRouter);
 
 const thirdRouter = require('./routes/doctors');
-app.use('/doctors', indexRouter);
+app.use('/doctors', thirdRouter);
 
 const fourthRouter = require('./routes/learning');
-app.use('/learning', indexRouter);
+app.use('/learning', fourthRouter);
 
 app.listen(port,(error)=>{
     if(error){
