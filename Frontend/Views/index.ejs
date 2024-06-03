@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%=title%></title>
+    <link rel="stylesheet" href="assets/styling.css"/>
+    <script src="https://kit.fontawesome.com/067bb09eee.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="headerWrapper">
+        <header>
+        <h1 class = "heading"></h1>
+        </header>
+        <nav id="mainNav">
+            <ul class = "mainNav">
+                <li class="nav navActive">
+                    <a href="/"></a>
+                </li>
+                <li class="nav">
+                    <a href="/diagnosis"><%=list%></a>
+                </li>
+                <li class="nav">
+                    <a href="/contact"></a>
+                </li>
+                <li class="nav">
+                    <a href="/firstAid"></a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+    <main>
+        <%=route%>
+    </main>
+    <footer>
+    
+    </footer>
+</body>
+</html>
