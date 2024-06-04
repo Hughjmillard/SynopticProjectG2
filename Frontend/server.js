@@ -6,16 +6,16 @@ app.set('view engine', 'ejs');
 
 app.use(express.static('Public'));
 
-const indexRouter = require('./routes/index');
+const indexRouter = require('./Routes/index');
 app.use('/', indexRouter);
 
-const secondRouter = require('./routes/symptoms');
+const secondRouter = require('./Routes/symptoms');
 app.use('/symptoms', secondRouter);
 
-const thirdRouter = require('./routes/contact');
+const thirdRouter = require('./Routes/contact');
 app.use('/contact', thirdRouter);
 
-const fourthRouter = require('./routes/learning');
+const fourthRouter = require('./Routes/learning');
 app.use('/learning', fourthRouter);
 
 app.listen(port,(error)=>{
