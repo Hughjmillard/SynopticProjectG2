@@ -92,10 +92,10 @@ article{
     background-color: lightgrey;
     text-align: center;
     position: relative;
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-wrap: wrap;
+    display: flex;
+    flex-direction: column;
     width: 47%;
     margin: 50px 50px;
     min-height: 400px;
@@ -115,6 +115,13 @@ main {
 
 
 /* for homepage */
+.textbox {
+    height: 100%;
+}
+.buttonbox {
+    display: flex;
+    align-self: baseline;
+}
 .homebutton {
     width: 10em;
     height: 5em;
