@@ -142,7 +142,7 @@ article p {
 
 /* for e learning */
 #learning {
-    height: 80vh;
+    height: 65vh;
     display: flex;
     justify-content: space-between;
 }
