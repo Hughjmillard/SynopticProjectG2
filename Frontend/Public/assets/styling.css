@@ -1,4 +1,6 @@
-
+:root {
+    --mainBlue: rgb(69, 76, 170);
+}
 
 *{
     padding: 0%;
@@ -27,7 +29,7 @@ header {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: rgb(69, 76, 170);
+    background-color: var(--mainBlue);
 }
 
 nav {
@@ -96,3 +98,26 @@ nav {
 
 
 /* idk what everything above is really about but itll work for now */
+
+main {
+    margin: 2% 10%;
+}
+
+/* for e learning */
+#learning {
+    height: 80vh;
+}
+#buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: aliceblue;
+    height: 100%;
+    padding: 2%;
+}
+
+button {
+    display: block;
+    height: 15em;
+    width: 15em;
+}
