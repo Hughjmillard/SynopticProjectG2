@@ -86,7 +86,7 @@ nav {
     display:flex;
     justify-content: center;
 }
-.homeBoxes{
+article{
     border: 10px solid var(--mainBlue);
     border-radius: 10px;
     background-color: lightgrey;
