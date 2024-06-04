@@ -11,18 +11,6 @@ body {
 }
 
 /* Nav styling */
-.mainNav a{
-    display: block;
-    background-color: lightgrey;
-    text-decoration: none;
-    text-align: center;
-    font-size: 20px;
-    font-family: bebas neue;
-    padding: 20px;
-    border: 0px;
-    color: grey;
-    border-radius: 10px;
-}
 
 a{
     background-color: transparent;
@@ -32,13 +20,22 @@ a{
 /*the hover effect*/
 header {
     width: 100vw;
-    display: block;
-    background-color: blue;
+    height: 4em;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgb(69, 76, 170);
 }
 
 nav {
-    display: flexbox;
+    display: flex;
     align-items: center;
+}
+
+
+
+#logo {
+    background-color: green;
 }
 
 
