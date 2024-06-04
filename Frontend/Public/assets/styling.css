@@ -83,7 +83,7 @@ nav {
     justify-content: center;
 }
 .homeBoxes{
-    border: 1px solid darkgrey;
+    border: 2px solid darkgrey;
     border-radius: 10px;
     background-color: lightgrey;
     text-align: center;
@@ -93,7 +93,8 @@ nav {
     align-items: center;
     flex-wrap: wrap;
     width: 47%;
-    margin: 0px 5px;
+    margin: 50px 50px;
+    min-height: 400px;
 }
 
 
