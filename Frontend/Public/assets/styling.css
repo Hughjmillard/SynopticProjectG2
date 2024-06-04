@@ -11,13 +11,16 @@ body {
 }
 
 /* Nav styling */
+/* literally everything in this nav needs reworking */
+/* probably should move to a hirarchy of things around to something more like this:
+    header -> logo / nav -> anchors
+    theres really no need for the list and complicated tags */
 
 a{
     background-color: transparent;
 }
 
 
-/*the hover effect*/
 header {
     width: 100vw;
     height: 4em;
@@ -31,6 +34,7 @@ nav {
     display: flex;
     height: 100%;
     align-items: center;
+    width: 30%;
 }
 
 
@@ -42,7 +46,8 @@ nav {
 
 .mainNav {
     display: flex;
-    height: 100%;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .nav { 
@@ -52,6 +57,7 @@ nav {
 }
 .nav a {
     color: white;
+    display: flex;
 }
 
     
@@ -87,3 +93,6 @@ nav {
     width: 47%;
     margin: 0px 5px;
 }
+
+
+/* idk what everything above is really about but itll work for now */
