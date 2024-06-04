@@ -97,7 +97,7 @@ article{
     display: flex;
     flex-direction: column;
     width: 40%;
-    margin: 1%;
+    margin: 0.4em;
     min-height: 400px;
 }
 
@@ -133,7 +133,11 @@ main {
 article h2 {
     background-color: var(--mainBlue);
     color: white;
-    padding-bottom: 0.5em;
+    padding-bottom: 0.7em;
+    height: fit-content;
+}
+article p {
+    margin: 2em;
 }
 
 /* for e learning */
