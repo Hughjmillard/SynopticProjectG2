@@ -2,6 +2,9 @@
 
 *{
     background-color: bisque;
+    padding: 0%;
+    border: 0%;
+    margin: 0%;
 }
 
 /* Nav styling */
@@ -21,7 +24,23 @@
 a{
     background-color: transparent;
 }
+
+
 /*the hover effect*/
+header {
+    width: 100vw;
+    display: block;
+}
+nav {
+    display: flex;
+    align-items: center;
+}
+ul {
+    display: inline;
+}
+.mainNav {
+    display: inline;
+}
 .nav { 
     transition: all .2s ease-in-out;
     margin: 0 6px; 
