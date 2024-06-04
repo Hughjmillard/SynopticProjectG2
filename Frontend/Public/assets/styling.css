@@ -1,10 +1,13 @@
 
 
 *{
-    background-color: bisque;
     padding: 0%;
     border: 0%;
     margin: 0%;
+}
+
+body {
+    background-color: rgb(252, 238, 221);
 }
 
 /* Nav styling */
@@ -30,20 +33,23 @@ a{
 header {
     width: 100vw;
     display: block;
+    background-color: blue;
 }
+
 nav {
-    display: flex;
+    display: flexbox;
     align-items: center;
 }
-ul {
-    display: inline;
-}
+
+
 .mainNav {
-    display: inline;
+    display: flex;
 }
+
 .nav { 
     transition: all .2s ease-in-out;
     margin: 0 6px; 
+    list-style: none;
 }
 
     
