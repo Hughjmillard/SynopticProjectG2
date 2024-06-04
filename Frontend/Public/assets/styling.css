@@ -87,7 +87,7 @@ nav {
     justify-content: center;
 }
 .homeBoxes{
-    border: 2px solid darkgrey;
+    border: 10px solid var(--mainBlue);
     border-radius: 10px;
     background-color: lightgrey;
     text-align: center;
@@ -111,6 +111,13 @@ h1 {
 }
 main {
     margin: 2% 10%;
+}
+
+
+/* for homepage */
+.homebutton {
+    width: 10em;
+    height: 5em;
 }
 
 /* for e learning */
