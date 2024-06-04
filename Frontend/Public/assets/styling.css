@@ -1,5 +1,6 @@
 :root {
     --mainBlue: rgb(69, 76, 170);
+    --background1: rgb(255, 255, 255);
 }
 
 *{
@@ -9,7 +10,7 @@
 }
 
 body {
-    background-color: rgb(252, 238, 221);
+    background-color: var(--background1);
 }
 
 /* Nav styling */
@@ -60,6 +61,9 @@ nav {
 .nav a {
     color: white;
     display: flex;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: 900;
+    text-decoration: none;
 }
 
     
@@ -100,7 +104,10 @@ nav {
 
 /* idk what everything above is really about but itll work for now */
 h1 {
-    margin-bottom: 1.2em;
+    margin-bottom: 0.4em;
+}
+.text {
+    margin-bottom: 1.8em;
 }
 main {
     margin: 2% 10%;
