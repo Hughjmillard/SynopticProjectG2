@@ -1,6 +1,7 @@
 :root {
-    --mainBlue: rgb(69, 76, 170);
-    --background1: rgb(255, 255, 255);
+    --mainBlue:#005eb8;
+    --background1: #f7f7f7;
+    --background2: rgb(238, 238, 238); 
 }
 
 *{
@@ -26,7 +27,7 @@ a{
 
 header {
     width: 100vw;
-    height: 4em;
+    height: 5em;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -37,7 +38,7 @@ nav {
     display: flex;
     height: 100%;
     align-items: center;
-    width: 30%;
+    width: 40%;
     margin-right: 10vw;
 }
 
@@ -64,6 +65,7 @@ nav {
     display: flex;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     font-weight: 900;
+    font-size: 1.4rem;
     text-decoration: none;
 }
 
@@ -83,13 +85,15 @@ nav {
 }
 
 #homeBoxes{
+   background-color: var(--background2); 
+    padding: 0% 20%;
     position: relative;
     display:flex;
     justify-content: space-between;
 }
 article{
     border: 20px solid var(--mainBlue);
-    background-color: lightgrey;
+    background-color: var(--background1);
     text-align: center;
     position: relative;
     justify-content: center;
@@ -99,18 +103,35 @@ article{
     width: 40%;
     margin: 0.4em;
     min-height: 400px;
+    margin-top: 3rem;
+    margin-bottom: 3rem;
 }
 
 
 /* idk what everything above is really about but itll work for now */
 h1 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3.5rem;
     margin-bottom: 0.4em;
 }
+h2 {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 3rem;
+}
+p {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 1.5rem;
+    padding-bottom: 1rem;
+}
 .text {
-    margin-bottom: 1.8em;
+    padding: 2% 15%;
+    margin-bottom: 2rem;
+}
+.text p {
+    padding-bottom: 7rem;
+    border-bottom: #005eb8 solid 0.25rem;
 }
 main {
-    margin: 2% 20%;
 }
 
 
@@ -135,13 +156,79 @@ article h2 {
     color: white;
     padding-bottom: 0.7em;
     height: fit-content;
+    font-size: 2.5rem;
 }
 article p {
     margin: 2em;
 }
+#firstaid {
+    padding: 0% 20%;
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem 0rem 8rem;
+}
+#firstaid div{
+    margin-right: 5%;
+}
+#firstaid img {
+    height: 40rem;
+    width: 40rem;
+    display: flex;
+}
+#firstaid div h2 {
+    margin-bottom: 2rem;
+}
+
+/* for diagnosis tool */
+#symptomsearch {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    padding: 0% 8%;
+}
+
+.symptombox {
+    height: 25vh;
+    width: 20vw;
+    background-color: rgb(255, 255, 255);
+    display: inline;
+    margin: 1rem;
+    min-width: 30vh;
+    border: 20px solid var(--mainBlue);
+}
+
+.symptombox h2 {
+    background-color: var(--mainBlue);
+    color: white;
+    padding-bottom: 0.7em;
+    height: fit-content;
+}
+
+.symptombox:hover {
+    background-color: #005eb8;
+}
+.symptombox:hover > .symptombox h2 {
+    background-color: #005eb8;
+}
+
+/* for contacting doctors */
+.doctor {
+    display: flex;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    padding: 0% 20%;
+    
+}
+.doctor img {
+    width:  20rem;
+    height: 20rem;
+    display: flex;
+    margin-right: 3rem;
+}
 
 /* for e learning */
 #learning {
+    padding: 0% 20% 5%; 
     height: 65vh;
     display: flex;
     justify-content: space-between;
@@ -183,4 +270,10 @@ button:hover {
     width: 100%;
     height: 100%;
     background-color: var(--background1);
+}
+
+#topbar {
+    width: 100%;
+    height: 3rem;
+    background-color: var(--mainBlue);
 }
