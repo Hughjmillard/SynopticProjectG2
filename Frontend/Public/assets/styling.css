@@ -243,16 +243,18 @@ article p {
 .symptombox {
     height: 25vh;
     width: 20vw;
-    background-color: rgb(255, 255, 255);
-    display: inline;
     margin: 1rem;
     min-width: 30vh;
-    border: 20px solid var(--mainBlue);
+    display: flex;
+    align-items: flex-end;
+    transition: all .3s ease-out;
+    background-image: url(../Public/assets/headache.png);
 }
 
-.symptombox h2 {
+.symptombox .textbox {
     background-color: var(--mainBlue);
     color: white;
+    width: 100%;
     padding-bottom: 0.7em;
     height: fit-content;
 }
