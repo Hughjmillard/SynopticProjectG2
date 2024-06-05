@@ -91,6 +91,9 @@ nav {
     display:flex;
     justify-content: space-between;
 }
+.homeBoxes:hover {
+    background-color: var(--mainBlue);
+}
 article{
     border: 20px solid var(--mainBlue);
     background-color: var(--background1);
@@ -105,6 +108,19 @@ article{
     min-height: 400px;
     margin-top: 3rem;
     margin-bottom: 3rem;
+}
+article .arrowBox {
+    display: block;
+    font-size: 5rem;
+    text-align: right;
+    padding: 2rem;
+}
+article .arrowBox i {
+    color: white;
+    opacity: 0;
+}
+.homeBoxes:hover > .textbox .arrowBox i {
+    opacity: 100%;
 }
 
 
@@ -241,14 +257,34 @@ article p {
 }
 
 .symptombox {
-    height: 25vh;
-    width: 20vw;
+    box-sizing: border-box;
+    height: 27vh;
+    width: 25vh;
     margin: 1rem;
-    min-width: 30vh;
+    min-width: 25vh;
     display: flex;
     align-items: flex-end;
-    transition: all .3s ease-out;
-    background-image: url(../Public/assets/headache.png);
+    transition: all .3s;
+    background-image: url(headache.png);
+    background-size: cover;
+    flex-wrap: wrap;
+    border-radius: 8%;
+    overflow: hidden;
+}
+
+.symptombox.active {
+    border: solid var(--mainBlue) 0.8rem;
+    transition: all .3s;
+}
+
+.sympinfo {
+    display: none;
+    transition: all 2ms ease-out;
+    padding: 2%;
+}
+
+.symptombox:hover > .sympinfo{
+    display: block;
 }
 
 .symptombox .textbox {
@@ -257,10 +293,12 @@ article p {
     width: 100%;
     padding-bottom: 0.7em;
     height: fit-content;
+    position:relative;
 }
 
 .symptombox:hover {
     background-color: #005eb8;
+    background-image: none;
 }
 .symptombox:hover > .symptombox h2 {
     background-color: #005eb8;
@@ -304,6 +342,10 @@ button {
     border: 0;
     border-radius: 10%;
     background-color: var(--mainBlue);
+
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: 800;
 }
 
 button:hover {
