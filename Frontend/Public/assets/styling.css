@@ -178,6 +178,59 @@ article p {
 #firstaid div h2 {
     margin-bottom: 2rem;
 }
+#illnesses {
+    background-color: var(--mainBlue);
+    padding: 2% 10%;
+}
+#illnesses h2 {
+    margin: 0% 10%;
+    color: white;
+}
+#illnessbox {
+    margin-top: 4rem;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.illness {
+    display: flex;
+    height: 25rem;
+    width: 25rem;
+    background-color: green;
+}
+@media only screen and (max-width: 2400px) {
+    .illness {
+        height: 20rem;
+        width: 20rem;
+    }
+  }
+@media only screen and (max-width: 1800px) {
+    .illness {
+        height: 17rem;
+        width: 17rem;
+    }
+  }
+@media only screen and (max-width: 1400px) {
+    #illnessbox {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .illness {
+        display: inline-block;
+        align-items: center;
+        margin: 1%;
+    }
+  }
+@media only screen and (max-width: 800px) {
+    .illness {
+        height: 10rem;
+        width: 10rem;
+    }
+  }
+#illnesses h3 {
+    text-align: right;
+}
+
 
 /* for diagnosis tool */
 #symptomsearch {
