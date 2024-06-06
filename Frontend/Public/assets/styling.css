@@ -187,8 +187,9 @@ article p {
     margin-right: 5%;
 }
 #firstaid img {
-    height: 40rem;
-    width: 40rem;
+    height: 40vh;
+    width: 50vh;
+    object-fit: cover;
     display: flex;
 }
 #firstaid div h2 {
