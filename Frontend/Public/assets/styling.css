@@ -295,6 +295,13 @@ article p {
     height: fit-content;
     position:relative;
 }
+.symptombox .textbox h2 {
+    font-size: 2rem;
+}
+.symptombox p {
+    font-size: 1rem;
+    color: white;
+}
 
 .symptombox:hover {
     background-color: #005eb8;
