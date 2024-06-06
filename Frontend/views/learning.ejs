@@ -6,6 +6,7 @@
     <title><%=title%></title>
     <link rel="stylesheet" href="assets/styling.css"/>
     <script src="https://kit.fontawesome.com/067bb09eee.js" crossorigin="anonymous"></script>
+    <script src="../cycleLearning.js" defer></script>
 </head>
 <body>
     <header>
@@ -62,14 +63,34 @@
                         <button>
                             <i class="fas fa-arrow-left"></i>
                         </button> 
-                        <button>
+                        <button onclick="nextPage()">
                             <i class="fas fa-arrow-right"></i>
                         </button>
                     </div>
                 </div>
 
-                <section class="edcontent active">
+                <section class="edcontent active" id="cpr-1">
                     <h2>Welcome to CPR ELearning</h2>
+
+                    <div class="edtext">
+                        <p>
+                            This is the paragraph which will explain the point and use of e learning
+                        </p>
+                        <img src="../assets/first-aid.png" alt="">
+                    </div>
+                </section>
+                <section class="edcontent" id="cpr-2">
+                    <h2>page 2</h2>
+
+                    <div class="edtext">
+                        <p>
+                            This is the paragraph which will explain the point and use of e learning
+                        </p>
+                        <img src="../assets/first-aid.png" alt="">
+                    </div>
+                </section>
+                <section class="edcontent" id="cpr-3">
+                    <h2>page 3</h2>
 
                     <div class="edtext">
                         <p>
