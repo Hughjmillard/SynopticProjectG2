@@ -375,6 +375,7 @@ button:hover {
     width: 100%;
     height: 100%;
     background-color: var(--background1);
+    padding-top: -2%;
 }
 
 #topbar {
@@ -401,6 +402,12 @@ button:hover {
     font-size: 1.5rem;
     font-weight: 800;
     padding: 0.5rem;
-    height: 100%;
-    width: fit-content;
+    width: 2.5rem;
+    height: 2.5rem;
+    border-radius: 50%;
+}
+#topbarnav button:hover {
+    background-color: white;
+    color: var(--mainBlue);
+
 }
