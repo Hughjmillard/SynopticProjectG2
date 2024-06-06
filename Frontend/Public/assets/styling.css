@@ -367,35 +367,35 @@ button:hover {
     align-items: center;
     vertical-align: middle;
     justify-content: center;
-    padding: 2%;
+    padding: 0% 2% 2%;
 }
 
 #edbox {
-    display: flex;
     width: 100%;
     height: 100%;
     background-color: var(--background1);
-    padding-top: -2%;
 }
 
-#topbar {
+.topbar {
     width: 100%;
     height: 3rem;
     background-color: var(--mainBlue);
     display: flex;
     justify-content: space-between;
+    color: white;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#topbarnav {
+.topbarnav {
     display: flex;
     width: 30%;
     align-items: center;
     justify-content: space-between;
 }
-#topbarnav h3 {
+.topbarnav h3 {
     text-align: center;
 }
-#topbarnav button {
+.topbarnav button {
     background-color: var(--mainBlue);
     color: white;
     border: 0;
@@ -406,8 +406,41 @@ button:hover {
     height: 2.5rem;
     border-radius: 50%;
 }
-#topbarnav button:hover {
+.topbarnav button:hover {
     background-color: white;
     color: var(--mainBlue);
 
+}
+.topbarleft {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 30%;
+}
+.topbarleft h2 {
+    font-size: 2rem;
+}
+
+.edcontent {
+    display: block;
+    padding: 2%;
+}
+
+.edcontent h2 {
+    display: flex;
+    width: 60%;
+    font-size: 2.5rem;
+    padding: 2rem;
+}
+
+.edtext {
+    display: flex;
+    justify-content: space-between;
+    padding: 2%;
+}
+.edtext img {
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    display: flex;
 }
