@@ -360,8 +360,8 @@ button:hover {
     background-color: #005eb8;
 }
 
-#education {
-    display: flex;
+.education {
+    display: none;
     background-color: var(--mainBlue);
     width: 100%;
     align-items: center;
@@ -369,8 +369,11 @@ button:hover {
     justify-content: center;
     padding: 0% 2% 2%;
 }
+.education.active {
+    display: flex;
+}
 
-#edbox {
+.edbox {
     width: 100%;
     height: 100%;
     background-color: var(--background1);
