@@ -343,8 +343,8 @@ article p {
 
 button {
     display: block;
-    height: 15em;
-    width: 15em;
+    height: 15vh;
+    width: 15vh;
 
     border: 0;
     border-radius: 10%;
@@ -356,7 +356,7 @@ button {
 }
 
 button:hover {
-    background-color: rgb(43, 48, 105);
+    background-color: #005eb8;
 }
 
 #education {
@@ -380,4 +380,26 @@ button:hover {
     width: 100%;
     height: 3rem;
     background-color: var(--mainBlue);
+    display: flex;
+    justify-content: space-between;
+}
+
+#topbarnav {
+    display: flex;
+    width: 30%;
+    align-items: center;
+    justify-content: space-between;
+}
+#topbarnav h3 {
+    text-align: center;
+}
+#topbarnav button {
+    background-color: var(--mainBlue);
+    color: white;
+    border: 0;
+    font-size: 1.5rem;
+    font-weight: 800;
+    padding: 0.5rem;
+    height: 100%;
+    width: fit-content;
 }
