@@ -111,22 +111,22 @@ var con = mysql.createConnection({
   
 
   // create the database
-  con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    con.query("CREATE DATABASE diagnosis", function (err, result) {
-      if (err) throw err;
-      console.log("Database created");
-    });
-  });
-
-
-// drop the database if it isnt working
   // con.connect(function(err) {
   //   if (err) throw err;
   //   console.log("Connected!");
-  //   con.query("drop database diagnosis", function (err, result) {
+  //   con.query("CREATE DATABASE diagnosis", function (err, result) {
   //     if (err) throw err;
   //     console.log("Database created");
   //   });
   // });
+
+
+// drop the database if it isnt working
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+    con.query("drop database diagnosis", function (err, result) {
+      if (err) throw err;
+      console.log("Database created");
+    });
+  });
