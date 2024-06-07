@@ -31,60 +31,62 @@
         </nav>
     </header>
     <main>
-        <section class="text">
-            <h1><%=heading%></h1>
-            <p>
-                <%=mainPara%>
-            </p>
-            </article>
-        </section>
-        <section id="homeBoxes">
-            <article id="whatBox" class="homeBoxes">
-                <div class="textbox">
-                    <h2 class="homeBoxH2"><%=diagnosisHeader%></h2>
-                    <p>
-                        <%=diagnosisPara%>
-                    </p>
-                    <div class="arrowBox">
-                        <i class="fa-solid fa-arrow-right"></i>
+        <div id="indexWrapper">
+            <section class="text">
+                <h1><%=heading%></h1>
+                <p>
+                    <%=mainPara%>
+                </p>
+                </article>
+            </section>
+            <section id="homeBoxes">
+                <article id="whatBox" class="homeBoxes">
+                    <div class="textbox">
+                        <h2 class="homeBoxH2"><%=diagnosisHeader%></h2>
+                        <p>
+                            <%=diagnosisPara%>
+                        </p>
+                        <div class="arrowBox">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </article>
+                <article id="howBox" class="homeBoxes">
+                    <div class="textbox">
+                        <h2 class="homeBoxH2"><%=contactHeader%></h2>
+                        <p>
+                            <%=contactPara%>
+                        </p>
+                        <div class="arrowBox">
+                            <i class="fa-solid fa-arrow-right"></i>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section id="firstaid">
+                <div>
+                    <h2><%=firstAidHeader%></h2>
+                    <p><%=firstAidPara%></p>
+                    <button id="learningButton"><%=learningButton%></button>
+                </div>
+                <img src="../assets/first-aid.png" alt="">
+            </section>
+            <section id="illnesses">
+                <h2>Health Conditions</h2>
+                <div id="illnessbox">
+                    <div class="illness">
+                    </div>
+                    <div class="illness">
+                    </div>
+                    <div class="illness">
+                    </div>
+                    <div class="illness">
                     </div>
                 </div>
-            </article>
-            <article id="howBox" class="homeBoxes">
-                <div class="textbox">
-                    <h2 class="homeBoxH2"><%=contactHeader%></h2>
-                    <p>
-                        <%=contactPara%>
-                    </p>
-                    <div class="arrowBox">
-                        <i class="fa-solid fa-arrow-right"></i>
-                    </div>
-                </div>
-            </article>
-        </section>
-        <section id="firstaid">
-            <div>
-                <h2><%=firstAidHeader%></h2>
-                <p><%=firstAidPara%></p>
-                <button><%=learningButton%></button>
-            </div>
-            <img src="../assets/first-aid.png" alt="">
-        </section>
-        <section id="illnesses">
-            <h2>Health Conditions</h2>
-            <div id="illnessbox">
-                <div class="illness">
-                </div>
-                <div class="illness">
-                </div>
-                <div class="illness">
-                </div>
-                <div class="illness">
-                </div>
-            </div>
-            <h3>Browse More</h3>
-            <img src="../Public/assets/first-aid.png" alt="">
-        </section>
+                <h3>Browse More</h3>
+                <img src="../Public/assets/first-aid.png" alt="">
+            </section>
+        </div>
     </main>
     <footer>
     
