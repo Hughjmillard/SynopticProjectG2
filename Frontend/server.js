@@ -1,3 +1,4 @@
+const bodyParser = require('body-parser');
 const express = require('express');
 const app = express();
 const port = 3000;
@@ -94,7 +95,7 @@ var con = mysql.createConnection({
         "INSERT INTO Illness (IllnessID, Name, Severity) VALUES (1, 'Common Cold', 'Mild'),(2, 'Influenza', 'Moderate'),(3, 'Food Poisoning', 'Severe'),(4, 'Migraine', 'Severe'),(5, 'Chickenpox', 'Moderate'),(6, 'Night Sweats', 'Moderate')",
         "INSERT INTO SymptomIllness (SymptomID, IllnessID) VALUES (1, 1),(2, 1),(5, 1),(6, 1),(2, 2),(7, 2),(4, 2),(6, 2),(4, 3),(7, 3),(5, 3),(1, 4),(8, 4),(4, 4),(2, 5),(6, 6)",
         "INSERT INTO Remedy (RemedyID, Name, Ingredients, Method) VALUES (1, 'Ginger Tea', 'Ginger, Water, Honey', 'Boil ginger in water, add honey'),(2, 'Peppermint Oil', 'Peppermint oil, Water', 'Dilute peppermint oil in water and apply'),(3, 'Hydration', 'Water, Electrolytes', 'Drink frequently'),(4, 'Tepid Sponge Bath', 'Water, Sponge', 'Sponge the body with tepid water'),(5, 'Aloe Vera', 'Aloe Vera Gel', 'Apply aloe vera gel to the wound'),(6, 'Turmeric Paste', 'Turmeric, Water', 'Mix turmeric with water to make a paste and apply'),(7, 'Peppermint Tea', 'Peppermint leaves, Water', 'Boil peppermint leaves in water'),(8, 'Cinnamon Tea', 'Cinnamon, Water, Honey', 'Boil cinnamon in water and add honey'),(9, 'Sage Tea', 'Sage leaves, Water', 'Boil sage leaves in water'),(10, 'Soy Products', 'Tofu, Soy Milk', 'Consume soy products'),(11, 'Mint Tea', 'Mint leaves, Water', 'Boil mint leaves in water'),(12, 'Carrot Juice', 'Carrots', 'Juice the carrots and drink'),(13, 'Bilberry Extract', 'Bilberry, Water', 'Extract bilberry juice and mix with water')",
-        "INSERT INTO IllnessRemedy (RemedyID, IllnessID) VALUES (1, 1),(2, 1),(3, 2),(4, 2),(5, 3),(6, 3),(1, 4),(7, 4),(1, 5),(8, 5),(9, 6),(10, 6),(1, 7),(11, 7),(12, 8),(13, 8)"
+        "INSERT INTO IllnessRemedy (RemedyID, IllnessID) VALUES (1, 1),(2, 1),(3, 2),(4, 2)"
       ];
   
       queries.forEach((query, index) => {
@@ -111,3 +112,42 @@ var con = mysql.createConnection({
   // dropDatabase();
   //createTables();
   //insertData();
+
+
+
+
+app.use(bodyParser.urlencoded({ extended: true }));
+app.use(bodyParser.json());
+
+app.post('/queryIllnesses', (req, res) => {
+  const selectedSymptoms = req.body.symptoms || [];
+
+  if (selectedSymptoms.length === 0) {
+    return res.send('No symptoms selected.');
+  }
+
+  // Convert the selectedSymptoms array to a list of numbers
+  const symptomIds = selectedSymptoms.map(id => mysql.escape(parseInt(id))).join(',');
+
+  const query = `
+    SELECT Name as illnessName 
+    FROM Illness 
+    WHERE IllnessID IN (
+      SELECT IllnessID 
+      FROM SymptomIllness 
+      WHERE SymptomID IN (${symptomIds})
+    )
+  `;
+
+  con.query(query, (err, results) => {
+    if (err) throw err;
+    res.json(results);
+  });
+});
+
+app.get('/getSymptoms', (req, res) => {
+  con.query('SELECT * FROM Symptoms', (err, result) => {
+    if (err) throw err;
+    res.json(result);
+  });
+});
