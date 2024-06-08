@@ -33,7 +33,7 @@ var con = mysql.createConnection({
     host: "localhost",
     user: "correctUsername",
     password: "correctPassword",
-    //database: "diagnosis"
+    database: "diagnosis"
   });
 
   con.connect(function(err) {
@@ -109,7 +109,7 @@ var con = mysql.createConnection({
   
   // Uncomment the functions you need to run
   //createDatabase();
-  // dropDatabase();
+  //dropDatabase();
   //createTables();
   //insertData();
 
