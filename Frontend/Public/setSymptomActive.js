@@ -5,8 +5,7 @@ const setActive = (symptom, id) => {
     if (symptomElement.classList.contains("active")) {
         symptomElement.classList.remove("active");
         box.checked = false;
-    }
-    else if (!symptomElement.classList.contains("active")) {
+    } else if (!symptomElement.classList.contains("active")) {
         symptomElement.classList.add("active");
         box.checked = true;
     }
@@ -93,8 +92,6 @@ document.addEventListener('DOMContentLoaded', function() {
     }
     form.addEventListener('submit', handleFormSubmit);
 });
-
-
 
 
 
