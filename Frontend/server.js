@@ -26,19 +26,19 @@ app.listen(port,(error)=>{
     }
 });
 
-let mysql =require('mysql');
+let mysql =require('mysql2');
 
 var con = mysql.createConnection({
     host: "localhost",
     user: "correctUsername",
     password: "correctPassword",
-    database: "diagnosis"
+    //database: "diagnosis"
   });
 
-  // con.connect(function(err) {
-  //   if (err) throw err;
-  //   console.log("Connected!");
-  // });
+  con.connect(function(err) {
+    if (err) throw err;
+    console.log("Connected!");
+  });
   
   function createDatabase() {
     con.connect(function(err) {
