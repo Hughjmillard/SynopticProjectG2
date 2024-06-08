@@ -23,3 +23,18 @@ const nextPage = () => {
     }
 
 }
+
+const openLearning = (id) => {
+    let learning = document.getElementById(id);
+    learning.classList.add("active")
+  };
+
+  const closeLearning = (id) => {
+    const elements = document.querySelectorAll('.education');
+    
+    elements.forEach(element => {
+      element.classList.remove('active');
+    });
+  };
+  
+  

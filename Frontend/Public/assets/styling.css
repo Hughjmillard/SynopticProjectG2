@@ -430,20 +430,18 @@ article p {
 
 /* for e learning */
 #learning {
-    padding: 0% 20% 5%; 
     height: 65vh;
-    display: flex;
-    justify-content: space-between;
 }
 #buttons {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     height: 100%;
-    margin-right: 5%;
+    margin: 0% 20%;
+    flex-wrap: wrap;
 }
 
-button {
+.classButton {
     display: block;
     height: 15vh;
     width: 15vh;
@@ -462,16 +460,20 @@ button:hover {
 }
 
 .education {
+    position: fixed;
     display: none;
     background-color: var(--mainBlue);
-    width: 100%;
     align-items: center;
     vertical-align: middle;
     justify-content: center;
+    top: 10%;
     padding: 0% 2% 2%;
+    margin: 0% 5%;
+    height: 80vh;
+    z-index: 9999;
 }
 .education.active {
-    display: flex;
+    display: block;
 }
 
 .edbox {
