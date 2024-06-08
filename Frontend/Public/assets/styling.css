@@ -435,25 +435,38 @@ article p {
 #buttons {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     height: 100%;
     margin: 0% 20%;
     flex-wrap: wrap;
 }
 
 .classButton {
-    display: block;
-    height: 15vh;
-    width: 15vh;
+    display: flex;
+    align-items: flex-end;
+    height: 25vh;
+    width: 25vh;
     margin: 2%;
 
     border: 0;
     border-radius: 10%;
-    background-color: var(--mainBlue);
+    background-image: url('../assets/headache.png');
+    background-size: cover;
+    overflow: hidden;
 
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 800;
+}
+.classButton:hover {
+    outline: var(--mainBlue) solid 0.5rem;
+}
+
+.classButton .textbox {
+    background-color: var(--mainBlue);
+    font-size: 2rem;
+    width: 150%;
+    height: fit-content;
 }
 
 button:hover {
@@ -467,10 +480,9 @@ button:hover {
     align-items: center;
     vertical-align: middle;
     justify-content: center;
-    top: 10%;
-    padding: 0% 2% 2%;
-    margin: 0% 5%;
-    height: 80vh;
+    top: 0%;
+    width: 100vw;
+    height: 100vh;
     z-index: 9999;
 }
 .education.active {
@@ -486,9 +498,10 @@ button:hover {
 .topbar {
     width: 100%;
     height: 3rem;
+    padding: 0% 2%;
     background-color: var(--mainBlue);
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
     color: white;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
