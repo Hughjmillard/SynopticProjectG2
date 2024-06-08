@@ -274,7 +274,7 @@ article p {
 }
 
 .symptombox.active {
-    border: solid var(--mainBlue) 0.8rem;
+    outline: solid var(--mainBlue) 0.8rem;
     transition: all .3s;
 }
 
