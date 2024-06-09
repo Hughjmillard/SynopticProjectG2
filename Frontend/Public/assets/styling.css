@@ -450,7 +450,6 @@ article p {
 
     border: 0;
     border-radius: 10%;
-    background-image: url('../assets/headache.png');
     background-size: cover;
     overflow: hidden;
 
@@ -458,8 +457,32 @@ article p {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     font-weight: 800;
 }
+#cpr {
+    background-image: url('../assets/bls.webp');
+}
+#wound {
+    background-image: url('../assets/openWound.webp');
+}
+#fracture {
+    background-image: url('../assets/fracture.webp');
+}
+#burn {
+    background-image: url('../assets/burns.webp');
+}
+#choking {
+    background-image: url('../assets/choking.webp');
+}
+#poison {
+    background-image: url('../assets/poisoning.webp');
+}
+#allergy {
+    background-image: url('../assets/allergy.webp');
+}
+#shock {
+    background-image: url('../assets/shock.webp');
+}
 .classButton:hover {
-    outline: var(--mainBlue) solid 0.5rem;
+    outline: var(--mainBlue) solid 0.8rem;
 }
 
 .classButton .textbox {

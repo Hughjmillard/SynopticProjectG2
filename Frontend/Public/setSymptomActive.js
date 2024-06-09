@@ -83,15 +83,7 @@ function handleFormSubmit(event) {
     });
 }
 
-// Attach the event listener after the DOM is loaded
-document.addEventListener('DOMContentLoaded', function() {
-    const form = document.getElementById('checkSymptoms');
-    if (!form) {
-        console.error('Form not found during event listener attachment');
-        return;
-    }
-    form.addEventListener('submit', handleFormSubmit);
-});
+
 
 
 
