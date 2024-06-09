@@ -28,7 +28,8 @@ router.get('/', (request, response) => {
         ],
         button: 'Submit',
         description: 'Use this page by clicking all of the symptoms you are experiencing.' +
-            '</br>Hover over an image to see a description.'
+            '</br>Hover over an image to see a description.',
+        footerText: "Developed By Computer Science Students at UEA"
     });
 });
 

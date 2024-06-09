@@ -29,6 +29,8 @@ router.get('/', (request, response) => {
     blsAED3: '3: Make sure no one is touching the person and press the "analyze" button.',
     blsAED4: '4: If the AED advises a shock, make sure no one is touching the person and press the "shock" button.',
     blsAED5: '5: Resume CPR immediately after the shock and continue until help arrives.',
+    footerText: "Developed By Computer Science Students at UEA"
+
     });
 });
 
