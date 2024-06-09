@@ -6,7 +6,8 @@
     <title><%=title%></title>
     <link rel="stylesheet" href="assets/styling.css"/>
     <script src="https://kit.fontawesome.com/067bb09eee.js" crossorigin="anonymous"></script>
-    <script src="./Routes/index.js" defer></script>
+    <!-- <script src="/Routes/index.js" defer></script> -->
+    <script src="../indexButtons.js" defer></script>
 </head>
 <body>
     <header>
@@ -47,7 +48,7 @@
                             <%=diagnosisPara%>
                         </p>
                         <div class="arrowBox">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-arrow-right homeArrows" id="symptomArrow"></i>
                         </div>
                     </div>
                 </article>
@@ -58,16 +59,16 @@
                             <%=contactPara%>
                         </p>
                         <div class="arrowBox">
-                            <i class="fa-solid fa-arrow-right"></i>
+                            <i class="fa-solid fa-arrow-right homeArrows" id="contactArrow"></i>
                         </div>
                     </div>
                 </article>
             </section>
             <section id="firstaid">
-                <div>
+                <div class="bottomPara">
                     <h2><%=firstAidHeader%></h2>
                     <p><%=firstAidPara%></p>
-                    <button id="learningButton"><%=learningButton%></button>
+                    <button id="learningButton"><%=learningButton%></i></button>
                 </div>
                 <img src="../assets/first-aid.png" alt="">
             </section>

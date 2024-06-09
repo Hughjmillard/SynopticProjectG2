@@ -26,14 +26,14 @@ app.listen(port,(error)=>{
     }
 });
 
-let mysql =require('mysql');
+// let mysql =require('mysql');
 
-var con = mysql.createConnection({
-    host: "localhost",
-    user: "yourusername",
-    password: "yourpassword",
-    // database: "diagnosis"
-  });
+// var con = mysql.createConnection({
+//     host: "localhost",
+//     user: "yourusername",
+//     password: "yourpassword",
+//     database: "diagnosis"
+//   });
   
   // con.connect(function(err) {
   //   if (err) throw err;
@@ -122,11 +122,11 @@ var con = mysql.createConnection({
 
 
 // drop the database if it isnt working
-  con.connect(function(err) {
-    if (err) throw err;
-    console.log("Connected!");
-    con.query("drop database diagnosis", function (err, result) {
-      if (err) throw err;
-      console.log("Database created");
-    });
-  });
+  // con.connect(function(err) {
+  //   if (err) throw err;
+  //   console.log("Connected!");
+  //   con.query("drop database diagnosis", function (err, result) {
+  //     if (err) throw err;
+  //     console.log("Database created");
+  //   });
+  // });

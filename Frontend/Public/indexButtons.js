@@ -1,16 +1,15 @@
-// function clickHandler(e){
-//     alert("button pressed!")
-//     if (e.currentTarget != e.target){
-//         const targetId = e.target.id;
-//         if (targetId == "whatBox"){
-//             //link to diagnosis page
-//         }else if (targetId == "howBox"){
-//             //link to contact page
-//         }else if (targetId == "learningButton"){
-//             //link to learning page
-//         }
-//     }
-// }
+function clickHandler(e){
+    if (e.currentTarget != e.target){
+        const targetId = e.target.id;
+        if (targetId == "symptomArrow"){
+            window.location.href = "/symptoms"
+        }else if (targetId == "contactArrow"){
+            window.location.href = "/contact"
+        }else if (targetId == "learningButton"){
+            window.location.href = "/learning"
+        }
+    }
+}
 
-// indexWrapper.addEventListener(click, clickHandler);
-
+console.log("test")
+document.getElementById('indexWrapper').addEventListener("click", clickHandler);
