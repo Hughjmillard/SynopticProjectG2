@@ -22,7 +22,6 @@ function handleFormSubmit(event) {
         return;
     }
 
-    // Select all checkboxes in the form and filter only the checked ones
     const checkboxes = event.target.querySelectorAll('input[name="symptoms"]:checked');
     console.log('Checkboxes found:', checkboxes);
 
