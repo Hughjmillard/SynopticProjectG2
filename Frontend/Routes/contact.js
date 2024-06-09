@@ -16,6 +16,7 @@ router.get('/', (request, response) => {
     doctorName:'Mondolkiri polyclinic',
     doctorAddress:'F55P+R94<br>76<br>Krong Saen Monourom<br>',
     doctorPhone:'+855 73 555 5117',
+    footerText: "Developed By Computer Science Students at UEA"
     });
 });
 
