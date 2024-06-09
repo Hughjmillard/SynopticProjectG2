@@ -275,6 +275,7 @@ article p {
 
 .symptombox {
     box-sizing: border-box;
+    position: relative;
     height: 27vh;
     width: 25vh;
     margin: 1rem;
@@ -282,7 +283,6 @@ article p {
     display: flex;
     align-items: flex-end;
     transition: all .3s;
-    background-image: url(headache.png);
     background-size: cover;
     flex-wrap: wrap;
     border-radius: 8%;
@@ -296,12 +296,13 @@ article p {
 
 .sympinfo {
     display: none;
-    transition: all 2ms ease-out;
+    transition: all 10s ease-out;
     padding: 2%;
 }
 
-.symptombox:hover > .sympinfo{
+.symptombox:hover > .textbox .sympinfo{
     display: block;
+    transition: all 10s ease;
 }
 
 .symptombox .textbox {
@@ -310,7 +311,9 @@ article p {
     width: 100%;
     padding-bottom: 0.7em;
     height: fit-content;
-    position:relative;
+    position: relative;
+    word-wrap: break-word;
+    transition: all 1s ease-in-out;
 }
 .textbox h2 {
     font-size: 1.5rem;
@@ -321,17 +324,27 @@ article p {
 }
 
 .symptombox:hover {
-    background-color: #005eb8;
     background-image: none;
 }
 .symptombox:hover > .symptombox h2 {
     background-color: #005eb8;
 }
-
+#checkSymptoms {
+    margin: 5% 20% 2% ;
+}
+br {
+    display: none;
+}
 #checkSymptoms label {
     display: none;
 }
-
+#checkSymptoms button {
+    bottom: 0;
+    position: fixed;
+    right: 0;
+    margin: 2vw;
+    font-size: 2.5rem;
+}
 /* symptom results */
 
 .resultSection{
@@ -367,15 +380,12 @@ article p {
 }
 
 /* for e learning */
-#learning {
-    height: 65vh;
-}
 #buttons {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     height: 100%;
-    margin: 0% 20%;
+    margin: 0% 20% 5%;
     flex-wrap: wrap;
 }
 
@@ -543,4 +553,8 @@ footer {
     font-size: 2rem;
     text-align: right;
     padding: 0.5% 5%;
+}
+
+#symptom1 {
+    background-image: url('../assets/fever.png');
 }
