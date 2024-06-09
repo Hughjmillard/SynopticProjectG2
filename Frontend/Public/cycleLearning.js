@@ -19,7 +19,29 @@ const nextPage = () => {
         if (next) {
             next.classList.add('active');
         }
-        console.log(nextIndex)
+        console.log(nextIndex);
     }
-
 }
+
+const openLearning = (id) => {
+    let learning = document.getElementById(id);
+    if (learning) {
+        learning.classList.add('active');
+        let firstChild = learning.querySelector('.edcontent');
+        if (firstChild) {
+            firstChild.classList.add('active');
+        }
+    }
+};
+
+const closeLearning = (id) => {
+    const elements = document.querySelectorAll('.education');
+    
+    elements.forEach(element => {
+        element.classList.remove('active');
+        let allDescendants = element.querySelectorAll('*');
+        allDescendants.forEach(descendant => {
+            descendant.classList.remove('active');
+        });
+    });
+};

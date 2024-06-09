@@ -39,24 +39,53 @@
 
        <section id="learning">
         <div id="buttons">
-            <button>
-                cpr
-            </button>
-            <button>
-
-            </button>
-            <button>
-
-            </button>
-            <button>
-
-            </button>
+            <div class="classButton" id="cpr" onclick="openLearning('cpr_l')">
+                <div class="textbox" id="cpr_b">
+                    <h2><%=bls%></h2>
+                </div>
+            </div>
+            <div class="classButton" id="wound" onclick="openLearning()">
+                <div class="textbox" id="wound_b">
+                    <h2>CPR</h2>
+                </div>
+            </div>
+            <div class="classButton" onclick="openLearning()" id="fracture">
+                <div class="textbox" id="fracture_b">
+                    <h2>CPR</h2>
+                </div>
+            </div>
+            <div class="classButton" onclick="openLearning()" id="burn">
+                <div class="textbox" id="burn_b">
+                    <h2>CPR</h2>
+                </div>
+            </div>
+            <div class="classButton" id="choking" onclick="openLearning()">
+                <div class="textbox" id="choking_b">
+                    <h2>CPR</h2>
+                </div>
+            </div>
+            <div class="classButton" onclick="openLearning()" id="poison">
+                <div class="textbox" id="poison_b">
+                    <h2>CPR</h2>
+                </div>
+            </div>
+            <div class="classButton" onclick="openLearning()" id="allergy">
+                <div class="textbox" id="allergy_b">
+                    <h2>CPR</h2>
+                </div>
+            </div>
+            <div class="classButton" onclick="openLearning()" id="shock">
+                <div class="textbox" id="shock_b">
+                    <h2>CPR</h2>
+                </div>
+            </div>
         </div>
-        <div class="education active">
+       </section>
+        <div class="education" id="cpr_l">
             <div class="edbox">
                 <div class="topbar">
-                    <div clss="topbarleft">
-                        <h2>CPR</h2>
+                    <div onclick="closeLearning()" class="topbarleft">
+                        <h2 >CLOSE</h2>
                     </div>
                     <div class="topbarnav">
                         <h3>page 1</h3>
