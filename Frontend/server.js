@@ -202,8 +202,13 @@ app.post('/queryIllnesses', (req, res) => {
   const symptomIds = selectedSymptoms.map(id => mysql.escape(parseInt(id))).join(',');
 
   const query = `
-    SELECT Illness.name as illnessName, Illness.explanation as illnessExplain
-    FROM Illness 
+    SELECT 
+      Illness.name as illnessName, 
+      Illness.explanation as illnessExplain,
+      GROUP_CONCAT(DISTINCT Remedies.name) as remedies
+    FROM Illness
+    LEFT JOIN IllnessRemedy ON Illness.id = IllnessRemedy.illness_id
+    LEFT JOIN Remedies ON IllnessRemedy.remedy_id = Remedies.id
     WHERE Illness.id IN (
       SELECT SI.illness_id
       FROM SymptomIllness SI
@@ -211,6 +216,7 @@ app.post('/queryIllnesses', (req, res) => {
       GROUP BY SI.illness_id
       HAVING COUNT(DISTINCT SI.symptom_id) = ${selectedSymptoms.length}
     )
+    GROUP BY Illness.id
   `;
 
   con.query(query, (err, results) => {
