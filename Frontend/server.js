@@ -108,10 +108,10 @@ var con = mysql.createConnection({
   }
   
   // Uncomment the functions you need to run
-  //createDatabase();
+  // createDatabase();
   //dropDatabase();
-  //createTables();
-  //insertData();
+  // createTables();
+  // insertData();
 
 
 
