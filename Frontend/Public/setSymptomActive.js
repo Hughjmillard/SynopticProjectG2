@@ -64,13 +64,15 @@ function handleFormSubmit(event) {
         const resultsDiv = document.getElementById('results');
         resultsDiv.innerHTML = '<h3>Illnesses:</h3>';
         if (data.length > 0) {
-            const ul = document.createElement('ul');
+            // const ul = document.createElement('ul');
             data.forEach(item => {
-                const li = document.createElement('li');
-                li.textContent = item.illnessName;
-                ul.appendChild(li);
+                // const li = document.createElement('li');
+                // li.textContent = item.illnessName;
+                // ul.appendChild(li);
+                resultsDiv.innerHTML += '<section class=resultSection>'+
+                '<h3> ${item.illnessName} </h3></section>'
             });
-            resultsDiv.appendChild(ul);
+            // resultsDiv.appendChild(ul);
         } else {
             resultsDiv.innerHTML += '<p>No illnesses found for the selected symptoms.</p>';
         }
