@@ -66,8 +66,14 @@ function handleFormSubmit(event) {
                 // const li = document.createElement('li');
                 // li.textContent = item.illnessName;
                 // ul.appendChild(li);
-                resultsDiv.innerHTML += '<section class="resultSection">'+
-                '<h3> ${item.illnessName} </h3></section>'
+                // resultsDiv.innerHTML += '<section class=resultSection>'+
+                // '<h3> </h3></section>'
+                let resultSection = document.createElement('section');
+                resultSection.classList.add('resultSection');
+                let h3 = document.createElement('h3');
+                h3.textContent = item.illnessName;
+                resultSection.appendChild(h3);
+                resultsDiv.appendChild(resultSection);
             });
             // resultsDiv.appendChild(ul);
         } else {
