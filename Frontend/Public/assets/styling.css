@@ -155,6 +155,9 @@ main {
 /* for homepage */
 .textbox {
     height: 100%;
+    padding: 0rem;
+}
+.classButton .textbox {
     padding: 0.5rem;
 }
 .buttonbox {
