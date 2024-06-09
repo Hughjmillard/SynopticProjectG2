@@ -446,7 +446,7 @@ article p {
 
 /* Newly added styles for the hover effect */
 
-.doctor-innerbox:hover .layer {
+/* .doctor-innerbox:hover .layer {
     background: rgba(91,146,229,0.5);
     box-shadow: 0 0 20px 0px rgba(0, 0, 0, 0.6);
 }
@@ -463,12 +463,12 @@ article p {
     transition: 0.7s ease;
     opacity: 0;
     z-index: 1; /* Ensure this is above the background layer */
-}
+/* }
 
 .doctor-innerbox:hover .doc-subcontact {
     bottom: 35%;
     opacity: 1;
-} */
+} */ */ */
 
 
 /* for e learning */
