@@ -597,7 +597,15 @@ button:hover {
     justify-content: space-between;
     padding: 2%;
 }
-.edtext img {
+.edtext img{
+    width: 40%;
+    height: 40%;
+    object-fit: cover;
+    display: flex;
+    margin: 2%;
+}
+.edtext video{
+    margin: 2%;
     width: 40%;
     height: 40%;
     object-fit: cover;
