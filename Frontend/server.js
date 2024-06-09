@@ -92,7 +92,6 @@ function insertData() {
       console.log("Connected!");
 
       const queries = [
-          // Insert data into Symptoms
           "INSERT INTO Symptoms (name) VALUES ('Headache')",
           "INSERT INTO Symptoms (name) VALUES ('Fever')",
           "INSERT INTO Symptoms (name) VALUES ('Cough')",
@@ -109,7 +108,6 @@ function insertData() {
           "INSERT INTO Symptoms (name) VALUES ('Loss of Smell')",
           "INSERT INTO Symptoms (name) VALUES ('Chest Pain')",
 
-          // Insert data into Illness
           "INSERT INTO Illness (name, explanation) VALUES ('Common Cold', 'A viral infection of your nose and throat (upper respiratory tract).')",
           "INSERT INTO Illness (name, explanation) VALUES ('Flu', 'An infectious disease caused by the influenza virus.')",
           "INSERT INTO Illness (name, explanation) VALUES ('COVID-19', 'An infectious disease caused by the SARS-CoV-2 virus.')",
@@ -121,32 +119,31 @@ function insertData() {
           "INSERT INTO Illness (name, explanation) VALUES ('Gastroenteritis', 'An intestinal infection marked by watery diarrhea, abdominal cramps, nausea or vomiting, and sometimes fever.')",
           "INSERT INTO Illness (name, explanation) VALUES ('Sinusitis', 'An inflammation or swelling of the tissue lining the sinuses.')",
 
-          // Insert data into SymptomIllness
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (1, 1)", // Headache -> Common Cold
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (2, 1)", // Fever -> Common Cold
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (3, 1)", // Cough -> Common Cold
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (4, 1)", // Sore Throat -> Common Cold
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (2, 2)", // Fever -> Flu
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (3, 2)", // Cough -> Flu
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (5, 2)", // Fatigue -> Flu
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (2, 3)", // Fever -> COVID-19
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (3, 3)", // Cough -> COVID-19
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (5, 3)", // Fatigue -> COVID-19
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (1, 4)", // Headache -> Migraine
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (4, 5)", // Sore Throat -> Strep Throat
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (6, 1)", // Runny Nose -> Common Cold
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (7, 2)", // Muscle Pain -> Flu
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (8, 2)", // Chills -> Flu
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (9, 6)", // Shortness of Breath -> Pneumonia
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (3, 7)", // Cough -> Bronchitis
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (10, 9)", // Nausea -> Gastroenteritis
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (11, 9)", // Vomiting -> Gastroenteritis
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (12, 9)", // Diarrhea -> Gastroenteritis
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (13, 3)", // Loss of Taste -> COVID-19
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (14, 3)", // Loss of Smell -> COVID-19
-          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (15, 6)", // Chest Pain -> Pneumonia
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (1, 1)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (2, 1)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (3, 1)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (4, 1)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (2, 2)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (3, 2)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (5, 2)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (2, 3)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (3, 3)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (5, 3)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (1, 4)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (4, 5)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (6, 1)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (7, 2)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (8, 2)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (9, 6)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (3, 7)", 
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (10, 9)",
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (11, 9)",
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (12, 9)",
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (13, 3)",
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (14, 3)",
+          "INSERT INTO SymptomIllness (symptom_id, illness_id) VALUES (15, 6)",
 
-          // Insert data into Remedies
+          
           "INSERT INTO Remedies (name) VALUES ('Rest')",
           "INSERT INTO Remedies (name) VALUES ('Hydration')",
           "INSERT INTO Remedies (name) VALUES ('Pain Relievers')",
@@ -158,21 +155,20 @@ function insertData() {
           "INSERT INTO Remedies (name) VALUES ('Nasal Sprays')",
           "INSERT INTO Remedies (name) VALUES ('Electrolyte Solutions')",
 
-          // Insert data into IllnessRemedy
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (1, 1)", // Rest -> Common Cold
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (2, 1)", // Hydration -> Common Cold
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (3, 4)", // Pain Relievers -> Migraine
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (4, 5)", // Antibiotics -> Strep Throat
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (5, 2)", // Cough Syrup -> Flu
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (5, 1)", // Cough Syrup -> Common Cold
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (1, 3)", // Rest -> COVID-19
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (2, 3)", // Hydration -> COVID-19
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (4, 6)", // Antibiotics -> Pneumonia
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (6, 8)", // Inhalers -> Asthma
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (7, 7)", // Antihistamines -> Bronchitis
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (8, 10)", // Decongestants -> Sinusitis
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (9, 10)", // Nasal Sprays -> Sinusitis
-          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (10, 9)" // Electrolyte Solutions -> Gastroenteritis
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (1, 1)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (2, 1)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (3, 4)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (4, 5)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (5, 2)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (5, 1)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (1, 3)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (2, 3)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (4, 6)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (6, 8)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (7, 7)", 
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (8, 10)",
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (9, 10)",
+          "INSERT INTO IllnessRemedy (remedy_id, illness_id) VALUES (10, 9)" 
       ];
 
       queries.forEach((query, index) => {
