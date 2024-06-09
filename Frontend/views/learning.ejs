@@ -44,39 +44,39 @@
                     <h2><%=bls%></h2>
                 </div>
             </div>
-            <div class="classButton" id="wound" onclick="openLearning()">
+            <div class="classButton" id="wound" onclick="openLearning('cpr_l')">
                 <div class="textbox" id="wound_b">
-                    <h2>CPR</h2>
+                    <h2><%=wound%></h2>
                 </div>
             </div>
-            <div class="classButton" onclick="openLearning()" id="fracture">
+            <div class="classButton" onclick="openLearning('cpr_l')" id="fracture">
                 <div class="textbox" id="fracture_b">
-                    <h2>CPR</h2>
+                    <h2><%=fracture%></h2>
                 </div>
             </div>
-            <div class="classButton" onclick="openLearning()" id="burn">
+            <div class="classButton" onclick="openLearning('cpr_l')" id="burn">
                 <div class="textbox" id="burn_b">
-                    <h2>CPR</h2>
+                    <h2><%=burn%></h2>
                 </div>
             </div>
-            <div class="classButton" id="choking" onclick="openLearning()">
+            <div class="classButton" id="choking" onclick="openLearning('cpr_l')">
                 <div class="textbox" id="choking_b">
-                    <h2>CPR</h2>
+                    <h2><%=choking%></h2>
                 </div>
             </div>
-            <div class="classButton" onclick="openLearning()" id="poison">
+            <div class="classButton" onclick="openLearning('cpr_l')" id="poison">
                 <div class="textbox" id="poison_b">
-                    <h2>CPR</h2>
+                    <h2><%=poisoning%></h2>
                 </div>
             </div>
-            <div class="classButton" onclick="openLearning()" id="allergy">
+            <div class="classButton" onclick="openLearning('cpr_l')" id="allergy">
                 <div class="textbox" id="allergy_b">
-                    <h2>CPR</h2>
+                    <h2><%=allergy%></h2>
                 </div>
             </div>
-            <div class="classButton" onclick="openLearning()" id="shock">
+            <div class="classButton" onclick="openLearning('cpr_l')" id="shock">
                 <div class="textbox" id="shock_b">
-                    <h2>CPR</h2>
+                    <h2><%=shock%></h2>
                 </div>
             </div>
         </div>
@@ -85,7 +85,7 @@
             <div class="edbox">
                 <div class="topbar">
                     <div onclick="closeLearning()" class="topbarleft">
-                        <h2 >CLOSE</h2>
+                        <h2 ><i class="fa-solid fa-x"></i></h2>
                     </div>
                     <div class="topbarnav">
                         <h3>page 1</h3>
@@ -99,23 +99,39 @@
                 </div>
 
                 <section class="edcontent active" id="cpr-1">
-                    <h2>Welcome to CPR ELearning</h2>
+                    <h2><%=blsWelcome%></h2>
 
                     <div class="edtext">
                         <p>
-                            This is the paragraph which will explain the point and use of e learning
+                        <%=blsContent%>
                         </p>
                         <img src="../assets/first-aid.png" alt="">
                     </div>
                 </section>
                 <section class="edcontent" id="cpr-2">
-                    <h2>page 2</h2>
+                    <h2><%=blsCPRtitle%></h2>
 
                     <div class="edtext">
                         <p>
-                            This is the paragraph which will explain the point and use of e learning
+                        <%=blsCPR%>
+                        <br/>
+                        <br/>
+                        <%=blsCPR2%>
+                        <br/>
+                        <br/>
+                        <%=blsCPR3%>
+                        <br/>
+                        <br/>
+                        <%=blsCPR4%>
+                        <br/>
+                        <br/>
+                        <%=blsCPR5%>
+                        <br/>
+                        <br/>
+                        <%=blsCPR6%>
                         </p>
-                        <img src="../assets/first-aid.png" alt="">
+                        <video src="../assets/cpr.mp4" controls="true" autoplay="true">
+                            "Your browser does not support the video tag."
                     </div>
                 </section>
                 <section class="edcontent" id="cpr-3">
