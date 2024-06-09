@@ -13,7 +13,9 @@ router.get('/', (request, response) => {
         contactPara: 'Use this page to get contact information for first aiders and local doctors',
         firstAidHeader: 'Learning Hub',
         firstAidPara: 'Use this tool to learn a range of first aid skills such as CPR and how to apply bandages',
-        learningButton: 'Go'
+        learningButton: 'Go',
+
+        footerText: "Developed By Computer Science Students at UEA"
     });
 });
 

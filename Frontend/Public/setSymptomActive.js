@@ -44,17 +44,14 @@ function handleFormSubmit(event) {
         body: JSON.stringify({ symptoms: selectedSymptoms }),
     })
     .then(response => {
-        console.log('Response received:', response);
         if (!response.ok) {
             throw new Error('Network response was not ok ' + response.statusText);
         }
         const contentType = response.headers.get('content-type');
-        console.log('Content-Type:', contentType);
         if (contentType && contentType.includes('application/json')) {
             return response.json();
         } else {
             return response.text().then(text => {
-                console.log('Response text:', text);
                 throw new Error('Invalid JSON: ' + text);
             });
         }
