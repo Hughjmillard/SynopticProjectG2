@@ -33,10 +33,28 @@
         <section class="text">
             <h1><%=heading%></h1>
             <p>
-                Filler content Filler content Filler content Filler content Filler content Filler content 
+                <%=contactPara%>
             </p>
+        
         </section>
-        <div class="main-our-doctors">
+        <section id="contactSection">
+            <div id="contactAdmin" class="contactPart">
+                <h3><%=sysAdminName%></h3>
+                <address><%-sysAdminAddress%></address>
+                <p class="phone"><br><%=sysAdminPhone%></p>
+            </div>
+            <div id="contactAid" class="contactPart">
+                <h3><%=aidName%></h3>
+                <address><%-aidAddress%></address>
+                <p class="phone"><br><%=aidPhone%></p>
+            </div>
+            <div id="contactDoctor" class="contactPart">  
+                <h3><%=doctorName%></h3>
+                <address><%-doctorAddress%></address>
+                <p class="phone"><br><%=doctorPhone%></p>
+            </div>
+        </section>
+        <!-- <div class="main-our-doctors">
             <div class="doctor-heading">
                 <h1>Our <span>Doctors</span></h1>
             </div>
@@ -112,7 +130,7 @@
     
                     <div class="teamimg">
                         <img src="assets/doctor2.png" alt="">
-                    </div>
+                    </div> -->
     
     </main>
 </body>

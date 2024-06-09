@@ -328,7 +328,33 @@ article p {
 #checkSymptoms label {
     display: none;
 }
-/* for contacting doctors */
+
+/* Contact Page */
+.contactPart h3{
+    font-size: 2.5rem;
+}
+.contactPart address{
+    font-size: 1.8rem;
+}
+.contactPart .phone{
+    font-style: italic;
+}
+
+.contactPart{
+    display: block;
+    min-height: 200px;
+    padding: 2% 20%;
+}
+#contactAdmin{
+    background-color: var(--background1);
+}
+#contactAid{
+    background-color: var(--background2);
+}
+#contactDoctor{
+    background-color: var(--background1);
+}
+/* for contacting doctors
 .main-our-doctors{
     padding: 1rem;
 }
@@ -438,7 +464,7 @@ article p {
 .doctor-innerbox:hover .doc-subcontact {
     bottom: 35%;
     opacity: 1;
-}
+} */
 
 
 /* for e learning */
