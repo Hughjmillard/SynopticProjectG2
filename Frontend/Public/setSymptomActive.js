@@ -71,6 +71,9 @@ function handleFormSubmit(event) {
                 h3.textContent = item.illnessName;
                 resultSection.appendChild(h3);
                 resultsDiv.appendChild(resultSection);
+                let p = document.createElement('p');
+                p.textContent = item.illnessExplain
+                resultSection.appendChild(p)
             });
         } else {
             resultsDiv.innerHTML += '<p>No illnesses found for the selected symptoms.</p>';

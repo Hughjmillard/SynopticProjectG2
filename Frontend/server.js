@@ -207,7 +207,7 @@ app.post('/queryIllnesses', (req, res) => {
   const symptomIds = selectedSymptoms.map(id => mysql.escape(parseInt(id))).join(',');
 
   const query = `
-    SELECT Illness.name as illnessName 
+    SELECT Illness.name as illnessName, Illness.explanation as illnessExplain
     FROM Illness 
     WHERE Illness.id IN (
       SELECT SI.illness_id
