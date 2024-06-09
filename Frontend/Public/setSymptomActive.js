@@ -61,21 +61,21 @@ function handleFormSubmit(event) {
                 h3.textContent = item.illnessName;
                 resultSection.appendChild(h3);
     
-                let pExplain = document.createElement('p');
-                pExplain.textContent = item.illnessExplain;
-                resultSection.appendChild(pExplain);
+                let explain = document.createElement('p');
+                explain.textContent = item.illnessExplain;
+                resultSection.appendChild(explain);
     
-                if (item.remedies) {
-                    let remediesList = document.createElement('ul');
-                    item.remedies.split(',').forEach(remedy => {
-                        let li = document.createElement('li');
-                        li.textContent = remedy.trim();
-                        remediesList.appendChild(li);
-                    });
-                    resultSection.appendChild(remediesList);
-                }
-    
+                let remediesList = document.createElement('ul');
+                item.remedies.split(',').forEach(remedy => {
+                    let li = document.createElement('li');
+                    li.textContent = remedy.trim();
+                    remediesList.appendChild(li);
+                });
+                resultSection.appendChild(remediesList);
+                
                 resultsDiv.appendChild(resultSection);
+
+                resultsDiv.scrollIntoView({behavior : "smooth"})
             });
         } else {
             resultsDiv.innerHTML += '<p>No illnesses found for the selected symptoms.</p>';

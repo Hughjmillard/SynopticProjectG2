@@ -199,13 +199,13 @@ app.post('/queryIllnesses', (req, res) => {
     return res.send('No symptoms selected.');
   }
 
-  const symptomIds = selectedSymptoms.map(id => mysql.escape(parseInt(id))).join(',');
+  const symptomIds = selectedSymptoms.map(id => parseInt(id)).join(',');
 
   const query = `
     SELECT 
-      Illness.name as illnessName, 
-      Illness.explanation as illnessExplain,
-      GROUP_CONCAT(DISTINCT Remedies.name) as remedies
+      Illness.name AS illnessName, 
+      Illness.explanation AS illnessExplain,
+      GROUP_CONCAT(DISTINCT Remedies.name) AS remedies
     FROM Illness
     LEFT JOIN IllnessRemedy ON Illness.id = IllnessRemedy.illness_id
     LEFT JOIN Remedies ON IllnessRemedy.remedy_id = Remedies.id
@@ -220,10 +220,13 @@ app.post('/queryIllnesses', (req, res) => {
   `;
 
   con.query(query, (err, results) => {
-    if (err) throw err;
+    if (err) {
+      return res.status(500).send('Error querying the database.');
+    }
     res.json(results);
   });
 });
+
 
 
 
