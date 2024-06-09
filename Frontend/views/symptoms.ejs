@@ -41,65 +41,96 @@
         </section>
 
         <section id="symptomsearch">
-            <div class="symptombox" id="headache" onclick="setActive('headache', '1')">
-                <p class="sympinfo inactive"><%=headacheDesc%></p>
+            <div class="symptombox" id="symptom0" onclick="setActive('symptom0', '0')">
+                <p class="sympinfo inactive"></p>
                 <div class="textbox">
-                    <h2 class="homeBoxH2"><%=Symptom1%></h2>
+                    <h2 class="homeBoxH2"><%=symptoms[0].name%></h2>
                 </div>
             </div>   
-            <div class="symptombox" id="fever" onclick="setActive('fever', '2')">
-                <p class="sympinfo inactive"><%=feverDesc%></p>
+            <div class="symptombox" id="symptom1" onclick="setActive('symptom1', '1')">
+                <p class="sympinfo inactive"></p>
                 <div class="textbox">
-                    <h2 class="homeBoxH2"><%=Symptom2%></h2>
+                    <h2 class="homeBoxH2"><%=symptoms[1].name%></h2>
                 </div>
             </div>   
-            <div class="symptombox" id="open" onclick="setActive('open', '3')">
-                <!-- Change ID of above line? not sure why its 'open' -->
-                <!-- also wound and nausea flipped? -->
-                <p class="sympinfo inactive"><%=woundDesc%></p>
+            <div class="symptombox" id="symptom2" onclick="setActive('symptom2', '2')">
+                <p class="sympinfo inactive"></p>
                 <div class="textbox">
-                    <h2 class="homeBoxH2"><%=Symptom3%></h2>
+                    <h2 class="homeBoxH2"><%=symptoms[2].name%></h2>
                 </div>
             </div>   
-            <div class="symptombox" id="nausea" onclick="setActive('nausea', '4')">
-                <p class="sympinfo inactive"><%=nauseaDesc%></p>
+            <div class="symptombox" id="symptom3" onclick="setActive('symptom3', '3')">
+                <p class="sympinfo inactive"></p>
                 <div class="textbox">
-                    <h2 class="homeBoxH2"><%=Symptom4%></h2>
+                    <h2 class="homeBoxH2"><%=symptoms[3].name%></h2>
                 </div>
             </div>   
-            <div class="symptombox" id="nightSweat" onclick="setActive('nightSweat', '5')">
-                <p class="sympinfo inactive"><%=nightSweatsDesc%></p>
-                <img src="../Public/assets/" alt=""/>
+            <div class="symptombox" id="symptom4" onclick="setActive('symptom4', '4')">
+                <p class="sympinfo inactive"></p>
                 <div class="textbox">
-                    <h2 class="homeBoxH2"><%=Symptom6%></h2>
+                    <h2 class="homeBoxH2"><%=symptoms[4].name%></h2>
                 </div>
             </div>   
-            <div class="symptombox" id="vomiting" onclick="setActive('vomiting', '6')">
-                <p class="sympinfo inactive"><%=vomitingDesc%></p>
+            <div class="symptombox" id="symptom5" onclick="setActive('symptom5', '5')">
+                <p class="sympinfo inactive"></p>
                 <div class="textbox">
-                    <h2 class="homeBoxH2"><%=Symptom7%></h2>
+                    <h2 class="homeBoxH2"><%=symptoms[5].name%></h2>
                 </div>
             </div>   
-            <div class="symptombox" id="blurredVision" onclick="setActive('blurredVision', '7')">
-                <p class="sympinfo inactive"><%=blurredVisionDesc%></p>
+            <div class="symptombox" id="symptom6" onclick="setActive('symptom6', '6')">
+                <p class="sympinfo inactive"></p>
                 <div class="textbox">
-                    <h2 class="homeBoxH2"><%=Symptom8%></h2>
+                    <h2 class="homeBoxH2"><%=symptoms[6].name%></h2>
                 </div>
             </div>   
-            <div class="symptombox" id="appetite" onclick="setActive('appetite', '8')">
-                <!-- appatite typo wont change rn as not sure where else shows -->
-                <p class="sympinfo inactive"><%=appetiteDesc%></p>
+            <div class="symptombox" id="symptom7" onclick="setActive('symptom7', '7')">
+                <p class="sympinfo inactive"></p>
                 <div class="textbox">
-                    <h2 class="homeBoxH2"><%=Symptom5%></h2>
+                    <h2 class="homeBoxH2"><%=symptoms[7].name%></h2>
                 </div>
             </div>   
-            <!-- Previously had 8 symptom boxes now 9? -->
-            <!-- <div class="symptombox">
-                <p class="sympinfo inactive">this needs replacing</p>
+            <div class="symptombox" id="symptom8" onclick="setActive('symptom8', '8')">
+                <p class="sympinfo inactive"></p>
                 <div class="textbox">
-                    <h2 class="homeBoxH2"><%=Symptom2%></h2>
+                    <h2 class="homeBoxH2"><%=symptoms[8].name%></h2>
                 </div>
-            </div>    -->
+            </div>   
+            <div class="symptombox" id="symptom9" onclick="setActive('symptom9', '9')">
+                <p class="sympinfo inactive"></p>
+                <div class="textbox">
+                    <h2 class="homeBoxH2"><%=symptoms[9].name%></h2>
+                </div>
+            </div>   
+            <div class="symptombox" id="symptom10" onclick="setActive('symptom10', '10')">
+                <p class="sympinfo inactive"></p>
+                <div class="textbox">
+                    <h2 class="homeBoxH2"><%=symptoms[10].name%></h2>
+                </div>
+            </div>   
+            <div class="symptombox" id="symptom11" onclick="setActive('symptom11', '11')">
+                <p class="sympinfo inactive"></p>
+                <div class="textbox">
+                    <h2 class="homeBoxH2"><%=symptoms[11].name%></h2>
+                </div>
+            </div>   
+            <div class="symptombox" id="symptom12" onclick="setActive('symptom12', '12')">
+                <p class="sympinfo inactive"></p>
+                <div class="textbox">
+                    <h2 class="homeBoxH2"><%=symptoms[12].name%></h2>
+                </div>
+            </div>   
+            <div class="symptombox" id="symptom13" onclick="setActive('symptom13', '13')">
+                <p class="sympinfo inactive"></p>
+                <div class="textbox">
+                    <h2 class="homeBoxH2"><%=symptoms[13].name%></h2>
+                </div>
+            </div>   
+            <div class="symptombox" id="symptom14" onclick="setActive('symptom14', '14')">
+                <p class="sympinfo inactive"></p>
+                <div class="textbox">
+                    <h2 class="homeBoxH2"><%=symptoms[14].name%></h2>
+                </div>
+            </div>   
         </section>
         <form id="checkSymptoms" onsubmit="handleFormSubmit(event)">
             <label><input type="checkbox" id="1" name="symptoms" value="1"> Option 1</label><br>
@@ -110,6 +141,13 @@
             <label><input type="checkbox" id="6" name="symptoms" value="6"> Option 6</label><br>
             <label><input type="checkbox" id="7" name="symptoms" value="7"> Option 7</label><br>
             <label><input type="checkbox" id="8" name="symptoms" value="8"> Option 8</label><br>
+            <label><input type="checkbox" id="9" name="symptoms" value="9"> Option 9</label><br>
+            <label><input type="checkbox" id="10" name="symptoms" value="10"> Option 10</label><br>
+            <label><input type="checkbox" id="11" name="symptoms" value="11"> Option 11</label><br>
+            <label><input type="checkbox" id="12" name="symptoms" value="12"> Option 12</label><br>
+            <label><input type="checkbox" id="13" name="symptoms" value="13"> Option 13</label><br>
+            <label><input type="checkbox" id="14" name="symptoms" value="14"> Option 14</label><br>
+            <label><input type="checkbox" id="15" name="symptoms" value="15"> Option 15</label><br>
             <button type="submit">Submit</button>
         </form>
         <div id="results"></div>

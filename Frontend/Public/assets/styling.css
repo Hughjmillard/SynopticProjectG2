@@ -26,7 +26,6 @@ a{
 
 
 header {
-    width: 100vw;
     height: 5em;
     display: flex;
     align-items: center;
@@ -317,7 +316,7 @@ article p {
     font-size: 1.5rem;
 }
 .symptombox p {
-    font-size: 1rem;
+    font-size: 1.5rem;
     color: white;
 }
 
@@ -639,4 +638,13 @@ button:hover {
     height: 40%;
     object-fit: cover;
     display: flex;
+}
+
+
+footer {
+    background-color: var(--mainBlue);
+    color: white;
+    font-size: 2rem;
+    text-align: right;
+    padding: 0.5% 5%;
 }
