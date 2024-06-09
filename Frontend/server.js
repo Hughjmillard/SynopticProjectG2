@@ -181,7 +181,6 @@ function insertData() {
 }
 
   
-  // Uncomment the functions you need to run
   // createDatabase();
   // dropDatabase();
   // createTables();
