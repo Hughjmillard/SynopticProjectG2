@@ -155,6 +155,7 @@ main {
 /* for homepage */
 .textbox {
     height: 100%;
+    padding: 0.5rem;
 }
 .buttonbox {
     display: flex;
@@ -309,8 +310,8 @@ article p {
     height: fit-content;
     position:relative;
 }
-.symptombox .textbox h2 {
-    font-size: 2rem;
+.textbox h2 {
+    font-size: 1.5rem;
 }
 .symptombox p {
     font-size: 1rem;
