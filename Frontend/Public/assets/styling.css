@@ -571,7 +571,7 @@ button:hover {
 
 .topbarnav {
     display: flex;
-    width: 30%;
+    width: 10%;
     align-items: center;
     justify-content: space-between;
 }

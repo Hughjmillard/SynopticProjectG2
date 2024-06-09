@@ -23,6 +23,12 @@ router.get('/', (request, response) => {
     blsCPR4: '4: Start Chest Compressions. Place the heel of one hand on the center of the chest and interlock the fingers. Push hard and fast at a rate of 100-120 compressions per minute.',
     blsCPR5: '5: Give Rescue Breaths. Pinch the nose and give two breaths into the mouth. Each breath should make the chest rise.',
     blsCPR6: '6: Continue CPR. Perform cycles of 30 chest compressions and two rescue breaths until help arrives.',
+    blsAEDtitle: 'Automated External Defibrillator (AED)',
+    blsAED: '1: Turn on the AED and follow the voice prompts.',
+    blsAED2: '2: Attach the AED pads to the person\'s bare chest as shown in the diagram.',
+    blsAED3: '3: Make sure no one is touching the person and press the "analyze" button.',
+    blsAED4: '4: If the AED advises a shock, make sure no one is touching the person and press the "shock" button.',
+    blsAED5: '5: Resume CPR immediately after the shock and continue until help arrives.',
     });
 });
 
