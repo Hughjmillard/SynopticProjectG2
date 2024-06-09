@@ -66,7 +66,7 @@ function handleFormSubmit(event) {
                 // const li = document.createElement('li');
                 // li.textContent = item.illnessName;
                 // ul.appendChild(li);
-                resultsDiv.innerHTML += '<section class=resultSection>'+
+                resultsDiv.innerHTML += '<section class="resultSection">'+
                 '<h3> ${item.illnessName} </h3></section>'
             });
             // resultsDiv.appendChild(ul);
