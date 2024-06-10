@@ -3,8 +3,8 @@ const router = express.Router();
 
 router.get('/', (request, response) => {
     response.render('contact',{title: 'Health Website',
-    homeNav: 'Home', symptomsNav: 'diagnosis tool', contactNav: 'contact doctors',
-    learningNav: 'learning', heading: 'Contact Page',
+    homeNav: 'Home', symptomsNav: 'Diagnosis Tool', contactNav: 'Contact Doctors',
+    learningNav: 'Learning', heading: 'Contact Page',
     contactPara: 'Shows contact information for local administrator' +
     ', local first aider and the closest doctors office.',
     sysAdminName:'System Administrator',

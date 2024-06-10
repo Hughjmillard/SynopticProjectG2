@@ -4,10 +4,8 @@ const router = express.Router();
 router.get('/', (request, response) => {
     response.render('symptoms', {
         title: 'Health Website',
-        homeNav: 'Home',
-        symptomsNav: 'diagnosis tool',
-        contactNav: 'contact doctors',
-        learningNav: 'learning',
+        homeNav: 'Home', symptomsNav: 'Diagnosis Tool', contactNav: 'Contact Doctors',
+        learningNav: 'Learning',
         header: 'Diagnosis Tool',
         symptoms: [
             { name: 'Headache', explanation: 'Headache is a common symptom characterized by aching or pain in the head or neck area.' },

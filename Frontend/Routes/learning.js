@@ -3,8 +3,8 @@ const router = express.Router();
 
 router.get('/', (request, response) => {
     response.render('learning',{title: 'Health Website',
-    homeNav: 'Home', symptomsNav: 'diagnosis tool', contactNav: 'contact doctors',
-    learningNav: 'learning',
+    homeNav: 'Home', symptomsNav: 'Diagnosis Tool', contactNav: 'Contact Doctors',
+    learningNav: 'Learning',
     bls: 'Basic Life Support (BLS)',
     wound: 'Wound Care',
     fracture: 'Fracture Care',

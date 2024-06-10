@@ -3,8 +3,8 @@ const router = express.Router();
 
 router.get('/', (request, response) => {
     response.render('index',{title: 'Health Website',
-        homeNav: 'Home', symptomsNav: 'diagnosis tool', contactNav: 'contact doctors',
-        learningNav: 'learning', heading: 'Heath Diagnosis Tool',
+        homeNav: 'Home', symptomsNav: 'Diagnosis Tool', contactNav: 'Contact Doctors',
+        learningNav: 'Learning', heading: 'Heath Diagnosis Tool',
         mainPara: 'Use this site to diagnose basic medical conditions' +
         'as well as learn various types of first aid in the learning hub.',
         diagnosisHeader: 'Self Diagnosis Tool',
