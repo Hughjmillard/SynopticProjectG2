@@ -92,7 +92,7 @@ nav {
 }
 
 
-article{
+.homeBoxes{
     border: 20px solid var(--mainBlue);
     background-color: var(--background1);
     text-align: center;
@@ -106,12 +106,14 @@ article{
     min-height: 400px;
     margin-top: 3rem;
     margin-bottom: 3rem;
+    border-radius: 8%;
 }
 article .arrowBox {
     display: block;
     font-size: 5rem;
     text-align: right;
     padding: 2rem;
+    /* margin-top: ; */
 }
 article .arrowBox i {
     color: var(--mainBlue);
@@ -174,7 +176,8 @@ main {
 article h2 {
     background-color: var(--mainBlue);
     color: white;
-    padding-bottom: 0.7em;
+    /* padding-bottom:0.7em; */
+    padding-top: 1em;
     height: fit-content;
     font-size: 2.5rem;
 }
@@ -284,8 +287,8 @@ article p {
     align-items: flex-end;
     transition: all .3s;
     background-size: cover;
-    flex-wrap: wrap;
     border-radius: 8%;
+    flex-wrap: wrap;
     overflow: hidden;
 }
 
