@@ -42,7 +42,7 @@ function handleFormSubmit(event) {
     .then(response => response.json())
     .then(data => {
         const resultsDiv = document.getElementById('results');
-        resultsDiv.innerHTML = '<h3>Illnesses:</h3>';
+        resultsDiv.innerHTML = '<h2>Illnesses:</h2>';
         if (data.length > 0) {
             data.forEach((item, index) => {
                 let resultSection = document.createElement('section');
@@ -59,6 +59,10 @@ function handleFormSubmit(event) {
                 let explain = document.createElement('p');
                 explain.textContent = item.illnessExplain;
                 resultSection.appendChild(explain);
+
+                let remedies = document.createElement('h4');
+                remedies.textContent = 'Remedies:';
+                resultSection.appendChild(remedies);
     
                 let remediesList = document.createElement('ul');
                 item.remedies.split(',').forEach(remedy => {

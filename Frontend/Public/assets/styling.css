@@ -569,3 +569,29 @@ footer {
 #symptom1 {
     background-image: url('../assets/fever.png');
 }
+
+p br {
+    display: block;
+}
+
+#results {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    h2 {
+        font-size: 3rem;
+        padding: 5% 15% 2%;
+    }
+    h3 {
+        margin-bottom: 2%;
+        font-size: 2rem;
+    }
+    p {
+        font-size: 1.5rem;
+        padding: 0% 5%;
+    }
+    h4 {
+        padding: 5% 5% 0;
+    }
+    ul {
+        padding: 1% 10%;
+    }   
+}
