@@ -319,7 +319,7 @@ article p {
     font-size: 1.5rem;
 }
 .symptombox p {
-    font-size: 1.5rem;
+    font-size: 0.9rem;
     color: white;
 }
 
@@ -343,7 +343,8 @@ br {
     position: fixed;
     right: 0;
     margin: 2vw;
-    padding: 0.4rem;
+    padding: 0% 2%;
+    height: 4rem;
     font-size: 2.5rem;
     border-radius: 2rem;
     background-color: var(--mainBlue);
@@ -353,7 +354,7 @@ br {
 #checkSymptoms button:hover {
     background-color: white;
     color: var(--mainBlue);
-    outline: var(--mainBlue) solid 0.8rem;
+    outline: var(--mainBlue) solid 0.4rem;
 }
 /* symptom results */
 
