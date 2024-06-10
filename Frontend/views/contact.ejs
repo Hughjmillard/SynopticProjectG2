@@ -9,9 +9,9 @@
 </head>
 <body>
     <header>
-        <div id="logo">
-            <!-- <a href="/"><img src="assets/logo.png" alt="logo"></a> -->
-        </div>
+        <!-- <div id="logo">
+            <a href="/"><img src="assets/logo.png" alt="logo"></a>
+        </div> -->
         <nav>
             <ul class = "mainNav">
                 <li class="nav">
@@ -20,7 +20,7 @@
                 <li class="nav">
                     <a href="/symptoms"><%=symptomsNav%></a>
                 </li>
-                <li class="nav">
+                <li class="nav navActive">
                     <a href="/contact"><%=contactNav%></a>
                 </li>
                 <li class="nav">
@@ -50,7 +50,7 @@
             </div>
             <div id="contactDoctor" class="contactPart">  
                 <h3><%=doctorName%></h3>
-                <address><%-doctorAddress%></address>
+                <address><%-doctorAddress%><address>
                 <p class="phone"><br><%=doctorPhone%></p>
             </div>
         </section>

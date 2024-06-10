@@ -29,7 +29,7 @@ header {
     height: 5em;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     background-color: var(--mainBlue);
 }
 
@@ -37,8 +37,8 @@ nav {
     display: flex;
     height: 100%;
     align-items: center;
+    justify-content: center;
     width: 40%;
-    margin-right: 10vw;
 }
 
 
@@ -59,6 +59,8 @@ nav {
     margin: 0 6px; 
     list-style: none;
 }
+
+
 .nav a {
     color: white;
     display: flex;
@@ -68,14 +70,15 @@ nav {
     text-decoration: none;
 }
 
+.navActive a{
+    text-decoration: underline;
+}
     
 .nav:hover { 
      transform: scale(1.1); 
 }
 
-.navActive{
-    background-color: rgb(37, 40, 83);
-}
+
 
 
 .heading{
@@ -223,16 +226,20 @@ article p {
     background-color: green;
 }
 #learningButton{
-    width: 10vh;
-    height: 5vh;
-    margin-bottom: 2px;
-    font-size: 22px;
     float: right;
-    justify-content: right;
+    margin: 2vw;
+    padding: 0% 4%;
+    height: 4rem;
+    font-size: 2.2rem;
+    border-radius: 2rem;
+    background-color: var(--mainBlue);
+    color: white;
+    border: none;
 }
 #learningButton:hover{
-    transform: scale(1.2);
-    transition: all .1s ease-in-out;
+    background-color: white;
+    color: var(--mainBlue);
+    outline: var(--mainBlue) solid 0.4rem;
 }
 @media only screen and (max-width: 2400px) {
     .illness {
