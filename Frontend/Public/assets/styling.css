@@ -108,10 +108,20 @@ nav {
     border-radius: 8%;
     height: 40vh;
 }
+.homeBoxes .textbox {
+    color: white;
+    background-color: var(--mainBlue);
+}
 .homeBoxes .textbox p {
     display: none;
 }
+.homeBoxes .textbox .arrowBox {
+    display: none;
+}
 .homeBoxes:hover > .homeBoxes .textbox p {
+    display: block;
+}
+.homeBoxes:hover > .homeBoxes .textbox .arrowBox {
     display: block;
 }
 .homeBoxes .textbox {
