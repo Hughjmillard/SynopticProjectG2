@@ -108,38 +108,37 @@ nav {
     margin-top: 3rem;
     align-items: flex-end;
     margin-bottom: 3rem;
-    border-radius: 8%;
+    border-radius: 2rem;
     height: 40vh;
 }
 .homeBoxes .textbox {
     color: white;
+    width: 100%;
+    height: fit-content;
     background-color: var(--mainBlue);
 }
 .homeBoxes .textbox p {
     display: none;
+    height: fit-content;
 }
 .homeBoxes .textbox .arrowBox {
     display: none;
 }
 .homeBoxes:hover > .textbox p {
     display: block;
+    margin: 0;
 }
 .homeBoxes:hover > .textbox .arrowBox {
     display: block;
 }
-.homeBoxes .textbox {
-    height: fit-content;
-    width: 100%;
-}
 article .arrowBox {
     display: block;
-    font-size: 5rem;
+    font-size: 2rem;
     text-align: right;
-    padding: 2rem;
     /* margin-top: ; */
 }
 article .arrowBox i {
-    color: var(--mainBlue);
+    color: white;
     opacity: 100;
 }
 
