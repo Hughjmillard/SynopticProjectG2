@@ -220,9 +220,6 @@ app.post('/queryIllnesses', (req, res) => {
   `;
 
   con.query(query, (err, results) => {
-    if (err) {
-      return res.status(500).send('Error querying the database.');
-    }
     res.json(results);
   });
 });

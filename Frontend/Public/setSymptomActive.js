@@ -22,7 +22,7 @@ const setActive = (symptom, id) => {
 function handleFormSubmit(event) {
     event.preventDefault();
 
-    const checkboxes = event.target.querySelectorAll('input[name="symptoms"]:checked');
+    const checkboxes = event.target.querySelectorAll('input:checked');
 
     let selectedSymptoms = Array.from(checkboxes).map(checkbox => checkbox.id);
 
@@ -39,12 +39,7 @@ function handleFormSubmit(event) {
         },
         body: JSON.stringify({ symptoms: selectedSymptoms }),
     })
-    .then(response => {
-        const contentType = response.headers.get('content-type');
-        if (contentType && contentType.includes('application/json')) {
-            return response.json();
-        } 
-    })
+    .then(response => response.json())
     .then(data => {
         const resultsDiv = document.getElementById('results');
         resultsDiv.innerHTML = '<h3>Illnesses:</h3>';
