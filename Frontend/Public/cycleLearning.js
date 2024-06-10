@@ -36,6 +36,7 @@ const openLearning = (id) => {
 
 const closeLearning = (id) => {
     const elements = document.querySelectorAll('.education');
+    let videos = document.querySelectorAll('.video');
     
     elements.forEach(element => {
         element.classList.remove('active');
@@ -44,11 +45,9 @@ const closeLearning = (id) => {
             descendant.classList.remove('active');
         });
     });
+    videos.forEach(video => {
+        video.pause();
+    });
 };
 
 
-// document.addEventListener('DOMContentLoaded', () => {
-//     let vid1 = document.getElementById('vid1');
-//     let vid2 = document.getElementById('vid2');
-
-//     vid1.onpause();
