@@ -97,8 +97,7 @@ nav {
     background-color: var(--background1);
     text-align: center;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
     display: flex;
     flex-direction: column;
     width: 40%;
@@ -107,6 +106,7 @@ nav {
     align-items: flex-end;
     margin-bottom: 3rem;
     border-radius: 8%;
+    height: 40vh;
 }
 .homeBoxes .textbox p {
     display: none;
