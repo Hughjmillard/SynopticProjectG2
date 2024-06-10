@@ -100,16 +100,36 @@ nav {
     background-color: var(--background1);
     text-align: center;
     position: relative;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-end;
     display: flex;
     flex-direction: column;
     width: 40%;
     margin: 0.4em;
-    min-height: 400px;
     margin-top: 3rem;
+    align-items: flex-end;
     margin-bottom: 3rem;
     border-radius: 8%;
+    height: 40vh;
+}
+.homeBoxes .textbox {
+    color: white;
+    background-color: var(--mainBlue);
+}
+.homeBoxes .textbox p {
+    display: none;
+}
+.homeBoxes .textbox .arrowBox {
+    display: none;
+}
+.homeBoxes:hover > .homeBoxes .textbox p {
+    display: block;
+}
+.homeBoxes:hover > .homeBoxes .textbox .arrowBox {
+    display: block;
+}
+.homeBoxes .textbox {
+    height: fit-content;
+    width: 100%;
 }
 article .arrowBox {
     display: block;
@@ -188,19 +208,33 @@ article p {
     margin: 2em;
 }
 #firstaid {
-    padding: 0% 20%;
     display: flex;
     justify-content: space-between;
-    margin: 8rem 0rem 8rem;
+    margin: 5% 20%;
+    border-radius: 10rem;
+    overflow: hidden;
+    outline: var(--mainBlue) solid 1.5rem;
 }
 #firstaid div{
     margin-right: 5%;
 }
 #firstaid img {
+    width: 40vw;
     height: 40vh;
-    width: 50vh;
     object-fit: cover;
     display: flex;
+}
+.bottomPara {
+   display: flex; 
+   justify-content: center;
+   flex-direction: column;
+}
+.bottomPara .arrowBox {
+    text-align: right;
+    font-size: 4rem;
+}
+#firstaid div {
+    margin: 2% 10%;
 }
 #firstaid div h2 {
     margin-bottom: 2rem;
