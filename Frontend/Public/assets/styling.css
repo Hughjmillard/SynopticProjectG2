@@ -121,10 +121,10 @@ nav {
 .homeBoxes .textbox .arrowBox {
     display: none;
 }
-.homeBoxes:hover > .homeBoxes .textbox p {
+.homeBoxes:hover > .textbox p {
     display: block;
 }
-.homeBoxes:hover > .homeBoxes .textbox .arrowBox {
+.homeBoxes:hover > .textbox .arrowBox {
     display: block;
 }
 .homeBoxes .textbox {
