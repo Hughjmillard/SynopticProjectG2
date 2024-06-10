@@ -45,3 +45,10 @@ const closeLearning = (id) => {
         });
     });
 };
+
+
+// document.addEventListener('DOMContentLoaded', () => {
+//     let vid1 = document.getElementById('vid1');
+//     let vid2 = document.getElementById('vid2');
+
+//     vid1.onpause();
