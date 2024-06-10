@@ -309,7 +309,7 @@ article p {
     background-color: var(--mainBlue);
     color: white;
     width: 100%;
-    padding-bottom: 0.7em;
+    padding: 0.7em;
     height: fit-content;
     position: relative;
     word-wrap: break-word;
@@ -565,9 +565,50 @@ footer {
     text-align: right;
     padding: 0.5% 5%;
 }
-
+#symptom0 {
+    background-image: url('../assets/headache.webp');
+}
 #symptom1 {
-    background-image: url('../assets/fever.png');
+    background-image: url('../assets/fever.webp');
+}
+#symptom2 {
+    background-image: url('../assets/cough.webp');
+}
+#symptom3 {
+    background-image: url('../assets/sorethroat.webp');
+}
+#symptom4 {
+    background-image: url('../assets/fatigue.webp');
+}
+#symptom5 {
+    background-image: url('../assets/runnynose.webp');
+}
+#symptom6 {
+    background-image: url('../assets/musclepain.webp');
+}
+#symptom7 {
+    background-image: url('../assets/chills.webp');
+}
+#symptom8 {
+    background-image: url('../assets/shornessofbreath.webp');
+}
+#symptom9 {
+    background-image: url('../assets/neusea.webp');
+}
+#symptom10 {
+    background-image: url('../assets/vomiting.webp');
+}
+#symptom11 {
+    background-image: url('../assets/diarrhea.webp');
+}
+#symptom12 {
+    background-image: url('../assets/lossoftaste.webp');
+}
+#symptom13 {
+    background-image: url('../assets/lossofsmell.webp');
+}
+#symptom14 {
+    background-image: url('../assets/chespain.webp');
 }
 
 p br {
