@@ -13,7 +13,7 @@ router.get('/', (request, response) => {
     choking: 'Airway Obstruction',
     poisoning: 'Poisoning and Overdose',
     allergy: 'Allergic Reactions',
-    shock: 'Shock Management',
+    shock: 'Sanitation',
 
     blsWelcome: 'Welcome to the Basic Life Support (BLS) learning module',
     blsContent: 'This course equips you with essential skills to respond to cardiac and respiratory emergencies. You\'ll learn high-quality chest compressions, effective ventilation, and how to use an automated external defibrillator (AED). Our hands-on training ensures you are prepared to perform life-saving interventions confidently in any emergency situation.',
