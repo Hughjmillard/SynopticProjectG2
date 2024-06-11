@@ -430,6 +430,21 @@ br {
     background-color: var(--background2);
     padding: 5% 20%;
 }
+#failedButton{
+    margin: 2vw;
+    padding: 0% 4%;
+    height: 4rem;
+    font-size: 2.2rem;
+    border-radius: 2rem;
+    background-color: var(--mainBlue);
+    color: white;
+    border: none;
+}
+#failedButton:hover{
+    background-color: white;
+    color: var(--mainBlue);
+    outline: var(--mainBlue) solid 0.4rem;
+}
 /* Contact Page */
 .contactPart h3{
     font-size: 2.5rem;
