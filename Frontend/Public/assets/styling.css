@@ -426,7 +426,10 @@ br {
     min-height: 200px;
     padding: 2% 20%;
 }
-
+#failedResult{
+    background-color: var(--background2);
+    padding: 5% 20%;
+}
 /* Contact Page */
 .contactPart h3{
     font-size: 2.5rem;
