@@ -1,3 +1,7 @@
+
+// set active used when a symptom is clicked in the diagnostics page
+//adds class to the symptom to change the styling
+// changes box.checked to t/f
 const setActive = (symptom, id) => {
     console.log("symptom: " + id)
     let box = document.getElementById(id);
@@ -13,15 +17,11 @@ const setActive = (symptom, id) => {
 }
 
 
-
-
-
-
-
-
+//function for when the user has input their symptoms to submit
+//adds the section at the bottom of the page for the response to user input + scrolls to response automatically
+//
 function handleFormSubmit(event) {
     event.preventDefault();
-
     const checkboxes = event.target.querySelectorAll('input:checked');
 
     let selectedSymptoms = Array.from(checkboxes).map(checkbox => checkbox.id);
@@ -96,9 +96,3 @@ function handleFormSubmit(event) {
         resultsDiv.innerHTML = `<p>Error querying illnesses: ${error.message}</p>`;
     });
 }
-
-
-
-
-
-

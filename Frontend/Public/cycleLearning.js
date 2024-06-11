@@ -1,3 +1,4 @@
+//changes between pages in the learning hub
 const nextPage = () => {
     console.log('next page');
     const current = document.querySelector('.edcontent.active');
@@ -22,7 +23,7 @@ const nextPage = () => {
         console.log(nextIndex);
     }
 }
-
+//adds active tag to open id
 const openLearning = (id) => {
     let learning = document.getElementById(id);
     if (learning) {
@@ -33,7 +34,7 @@ const openLearning = (id) => {
         }
     }
 };
-
+//removes active tag from id when closed
 const closeLearning = (id) => {
     const elements = document.querySelectorAll('.education');
     let videos = document.querySelectorAll('.video');

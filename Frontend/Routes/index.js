@@ -14,7 +14,7 @@ router.get('/', (request, response) => {
         firstAidHeader: 'Learning Hub',
         firstAidPara: 'Use this tool to learn a range of first aid skills such as CPR and how to apply bandages',
         learningButton: 'Go',
-
+        click:'Click for More',
         footerText: "Developed By Computer Science Students at UEA"
     });
 });

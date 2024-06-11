@@ -1,3 +1,5 @@
+// buttons for the homepage to link to other pages
+
 function clickHandler(e){
     if (e.currentTarget != e.target){
         const targetId = e.target.id;
