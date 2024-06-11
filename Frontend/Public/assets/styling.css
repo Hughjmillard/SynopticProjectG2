@@ -96,7 +96,6 @@ nav {
 
 
 .homeBoxes{
-    border: 20px solid var(--mainBlue);
     background-color: var(--background1);
     text-align: center;
     position: relative;
@@ -110,6 +109,10 @@ nav {
     margin-bottom: 3rem;
     border-radius: 2rem;
     height: 50vh;
+    overflow: hidden;
+}
+.homeBoxes:hover {
+    outline: 1rem solid var(--mainBlue);
 }
 .homeBoxes .textbox {
     color: white;
@@ -117,9 +120,15 @@ nav {
     height: fit-content;
     background-color: var(--mainBlue);
 }
+#howBox {
+    background-image: url('../assets/finddoctor.webp');
+    background-size: contain;
+    background-position: top;
+}
 .homeBoxes .textbox p {
     display: block;
     height: fit-content;
+    font-size: 1rem;
 }
 article .arrowBox {
     display: block;
@@ -135,12 +144,20 @@ article .arrowBox i {
     color: white;
     opacity: 100;
 }
+.homeBoxes .textbox .arrowBox {
+    vertical-align: middle;
+}
+#whatBox {
+    background-image: url('../assets/diagnosistool.webp');
+    background-size: contain;
+    background-position: top;
+}
 
 .homeBoxes .textbox .arrowBox .homeArrows {
-    margin-left: 1rem;
+    margin-left: 0.5rem;
 }
 .homeBoxes:hover > .textbox .arrowBox {
-    text-decoration: underline;
+    transform: scale(1.1);
 }
 
 .arrowBox {
@@ -194,6 +211,9 @@ main {
     height: 5em;
     margin: 5%;
 }
+.arrowBox {
+    margin-bottom: 0.8rem;
+}
 
 article h2 {
     background-color: var(--mainBlue);
@@ -204,7 +224,7 @@ article h2 {
     font-size: 2.5rem;
 }
 article p {
-    margin: 1em;
+    margin: 0.2em;
 }
 #firstaid {
     display: flex;
