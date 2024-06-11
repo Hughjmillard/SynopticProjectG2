@@ -109,7 +109,7 @@ nav {
     align-items: flex-end;
     margin-bottom: 3rem;
     border-radius: 2rem;
-    height: 40vh;
+    height: 50vh;
 }
 .homeBoxes .textbox {
     color: white;
@@ -118,33 +118,33 @@ nav {
     background-color: var(--mainBlue);
 }
 .homeBoxes .textbox p {
-    display: none;
+    display: block;
     height: fit-content;
-}
-.homeBoxes .textbox .arrowBox {
-    display: none;
-}
-.homeBoxes:hover > .textbox p {
-    display: block;
-    margin: 0;
-}
-.homeBoxes:hover > .textbox .arrowBox {
-    display: block;
 }
 article .arrowBox {
     display: block;
     font-size: 2rem;
     text-align: right;
+    margin-right: 1.5rem;
     /* margin-top: ; */
+}
+.arrowBox .homeArrows {
+    font-size: 3rem;
 }
 article .arrowBox i {
     color: white;
     opacity: 100;
 }
 
-.homeArrows:hover{
-    transform: scale(1.3);
-    transition: all .3s ease-in-out;
+.homeBoxes .textbox .arrowBox .homeArrows {
+    margin-left: 1rem;
+}
+.homeBoxes:hover > .textbox .arrowBox {
+    text-decoration: underline;
+}
+
+.arrowBox {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
 
@@ -204,7 +204,7 @@ article h2 {
     font-size: 2.5rem;
 }
 article p {
-    margin: 2em;
+    margin: 1em;
 }
 #firstaid {
     display: flex;
