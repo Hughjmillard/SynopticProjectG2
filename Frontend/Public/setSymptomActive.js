@@ -85,7 +85,12 @@ function handleFormSubmit(event) {
             failedResult.appendChild(noIllnessH2);
             noIllnessH2.innerHTML += 'No illnesses found for the selected symptoms, contact a doctor.'
             resultsDiv.scrollIntoView({behavior : "smooth"})
-        }
+            let contactButton = document.createElement("button");
+            contactButton.id = "failedButton";
+            failedResult.appendChild(contactButton);
+            contactButton.innerHTML += 'Contact Page';
+            contactButton.setAttribute('onclick',"window.location.href='/contact'");
+        }   
     }) 
     .catch(error => {
         resultsDiv.innerHTML = `<p>Error querying illnesses: ${error.message}</p>`;
