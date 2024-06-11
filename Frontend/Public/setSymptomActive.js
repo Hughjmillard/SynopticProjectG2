@@ -77,7 +77,14 @@ function handleFormSubmit(event) {
                 resultsDiv.scrollIntoView({behavior : "smooth"})
             });
         } else {
-            resultsDiv.innerHTML += '<p>No illnesses found for the selected symptoms.</p>';
+            let failedResult = document.createElement("div");
+            failedResult.id = "failedResult";
+            resultsDiv.appendChild(failedResult);
+            noIllnessH2 = document.createElement("h2");
+            noIllnessH2.id = "noIllnesses";
+            failedResult.appendChild(noIllnessH2);
+            noIllnessH2.innerHTML += 'No illnesses found for the selected symptoms, contact a doctor.'
+            resultsDiv.scrollIntoView({behavior : "smooth"})
         }
     }) 
     .catch(error => {

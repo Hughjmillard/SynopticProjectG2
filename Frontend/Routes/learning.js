@@ -4,7 +4,8 @@ const router = express.Router();
 router.get('/', (request, response) => {
     response.render('learning',{title: 'Health Website',
     homeNav: 'Home', symptomsNav: 'Diagnosis Tool', contactNav: 'Contact Doctors',
-    learningNav: 'Learning',
+    learningNav: 'Learning', header:'Welcome to E-Learning',
+    description:'E-Learning is a tool to learn about First Aid and System Administration.',
     bls: 'Basic Life Support (BLS)',
     wound: 'Wound Care',
     fracture: 'Fracture Care',
