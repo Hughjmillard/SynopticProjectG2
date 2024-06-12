@@ -182,7 +182,7 @@ function insertData() {
 
   
  //  createDatabase();
- // dropDatabase();
+//  dropDatabase();
   //createTables();
  // insertData();
 
